@@ -1,7 +1,7 @@
 const $ = require("lib/jquery.js");
 
 class ProNavClass extends uu.Component {
-
+//头部公共组建
     onLoad() {
         const pathnameArr = location.pathname.split('/');
         const basename = pathnameArr[pathnameArr.length - 1];
