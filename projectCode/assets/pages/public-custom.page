@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1475286_242289_395168_585237">
+  <title>产品基本信息</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+
+  <div class="mywrap">
+
+    <prefab src="prefab/pro_nav.prefab"></prefab>
+    <div class="m_t25">
+
+      <prefab src="prefab/public-custom.prefab"></prefab>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+<!-- uuid:1475285_967637_225510_968639! -->

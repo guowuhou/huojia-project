@@ -1,0 +1,137 @@
+
+<div class="productCustomLess" uunode="1471061_544414_469059_508857" uunodename="node">
+<div class="nav-tabs fujian1">
+    <span class="uploadtext">自定义信息</span>
+    <button type="button" class="btn btn-default saveIcon ft12">保存</button>    
+    <button type="button" class="btn btn-primary editIcon ft12">编辑</button>
+</div>
+
+<form class="form-horizontal" style="margin-bottom: 40px;" role="form" id="editDiv"> 
+   <div class="form-group">
+      <label for="lastname" class="col-sm-2 control-label">产品经理名称:</label>
+      <div class="col-sm-7">
+         <input type="text" class="form-control" id="managerName">
+      </div>
+   </div>
+      <div class="form-group" id="investmentDirection">
+      <label for="lastname" class="col-sm-2 control-label">投资方向:</label>
+      <label class="checkbox-inline">
+          <input type="radio" name="investmentDirectionRadio" id="investmentDirectionRadio1" value="W0005" >不区分
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="investmentDirectionRadio" id="investmentDirectionRadio2" value="W0001"> 私募融资
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="investmentDirectionRadio" id="investmentDirectionRadio3" value="W0002"> 私募投资
+      </label>
+       <label class="checkbox-inline">
+          <input type="radio" name="investmentDirectionRadio" id="investmentDirectionRadio2" value="W0003"> 公募融资
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="investmentDirectionRadio" id="investmentDirectionRadio3" value="W0004"> 公募投资
+      </label>
+   </div>
+   <div class="form-group" id="customerAssetClassification">
+      <label for="lastname" class="col-sm-2 control-label">客户资产配置分类:</label>
+      <label class="checkbox-inline">
+          <input type="radio" name="customerAssetClassificationRadio" id="customerAssetClassificationRadio1" value="A0005" >不区分
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="customerAssetClassificationRadio" id="customerAssetClassificationRadio2" value="A0001"> 现金类
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="customerAssetClassificationRadio" id="customerAssetClassificationRadio3" value="A0002"> 固收类
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="customerAssetClassificationRadio" id="customerAssetClassificationRadio4" value="A0003"> 权益类
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="customerAssetClassificationRadio" id="customerAssetClassificationRadio5" value="A0004"> 另类投资
+      </label>
+   </div>
+   <div class="form-group" id="marketingStatus">
+      <label for="lastname" class="col-sm-2 control-label">营销状态:</label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="marketingStatusRadio" id="marketingStatusRadio1" value="S0004" >不区分
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="marketingStatusRadio" id="marketingStatusRadio2" value="S0001">推荐
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="marketingStatusRadio" id="marketingStatusRadio3" value="S0002">热销
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="marketingStatusRadio" id="marketingStatusRadio4" value="S0003">重点
+      </label>
+   </div>
+   <div class="form-group" id="customersLabel">
+      <label for="lastname" class="col-sm-2 control-label">客层分类:</label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio4" value="L0004" >不区分
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio1" value="L0001" >大众客户
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio2" value="L0003"> 财富客户
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio3" value="L0002"> 私行客户
+      </label>
+   </div>
+   <div class="form-group" id="salesChannels">
+      <label for="lastname" class="col-sm-2 control-label">接入渠道:</label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="salesChannelsRadio" id="salesChannelsRadio1" value="C0001" >营业柜台
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="salesChannelsRadio" id="salesChannelsRadio2" value="C0002"> 网上银行
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="salesChannelsRadio" id="salesChannelsRadio3" value="C0003"> 手机银行
+      </label>
+       <label class="checkbox-inline m20">
+          <input type="checkbox" name="salesChannelsRadio" id="salesChannelsRadio1" value="C0004" >爱客
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="salesChannelsRadio" id="salesChannelsRadio2" value="C0005"> 橙E网
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="salesChannelsRadio" id="salesChannelsRadio3" value="C0006"> 其它
+      </label>
+   </div>
+</form>  
+<div class="nav-tabs fujian1">
+    <span class="uploadtext">产品标签</span>
+</div>     
+ <form class="form-horizontal" style="margin-bottom: 40px;" role="form"> 
+     <div class="form-group" id="">
+      <label for="lastname" class="col-sm-2 control-label">产品系列组合标签:</label>
+      <div class="col-sm-7">
+         <input type="text" class="form-control" id="productSeries" readonly>
+      </div>
+   </div>
+</form>               
+<div class="nav-tabs fujian2">
+    <form id="uploadForm" method="post" target="upload_iframe" enctype="multipart/form-data">
+        <span class="uploadtext">附件上传</span>
+        <input type="file" id="fileField" name="files " class="upload" style="filter: alpha(opacity:0);"  multiple="multiple">
+        <span class="glyphicon glyphicon-plus uploadIcon"></span>
+        <input type="text" style="display:none" readonly="true" name="prdCode" id="prdCodeId">
+        <input type="text" style="display:none" readonly="true" name="tpClId" id="tpClId">
+        <input type="text" style="display:none" readonly="true" name="prdType" id="prdTypeId">
+    </form>
+</div>
+
+
+<ul class="list-group1" id="attachListTable">
+  
+</ul>
+<a id="downLoadAttach" style="display:none"></a>
+ <iframe id="upload_iframe" style="width:100%;height:200px;display: none" name="upload_iframe">
+ </iframe>
+</div>
+
+<!-- uuid:1470912_565754_82687_395018! -->
+
+ 

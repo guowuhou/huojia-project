@@ -1,0 +1,94 @@
+<div class="mywrap">
+    <prefab src="prefab/nav-input.prefab"></prefab>
+    <div class="panel panel-primary" uunode="1473391_267786_373035_850833">
+        <div class="panel-heading">筛选条件</div>
+        <div class="panel-body">
+            <form class="form-inline m_b10">
+                <div class="form-group m_r60">
+                    <label for="prdCode" class="inline p_r10">产品代码：</label>
+                    <input maxlength="30" style="width:250px" type="text" class="form-control" id="prdCode" placeholder="请输入产品代码" filter="prdCode"
+                        uudom="dom_488_670_697_722">
+                </div>
+                <div class="form-group">
+                    <label for="riskLevel" class="inline p_r10">风险等级：</label>
+                    <select style="width:250px" class="form-control" id="riskLevel" filter="riskLevel" uudom="dom_210_216_217_402">
+                            <option value="ALL">全部</option>
+                            <!--<option value="notTest">未评定</option>
+                            <option value="low">低</option>
+                            <option value="midLow">中低</option>
+                            <option value="mid">中</option>
+                            <option value="midHigh">中高</option>
+                            <option value="high">高</option>-->
+                        </select>
+                </div>
+            </form>
+            <form id="test" class="form-inline m_b10">
+                <div class="form-group m_r60">
+                    <label for="fundType" class="inline p_r10">基金类型：</label>
+                    <select style="width:250px" class="form-control" id="fundType" filter="fundType" uudom="dom_495_645_799_838">
+                            <option value="ALL">全部</option>
+                            <!--<option value="stock">股票型</option>
+                            <option value="mix">混合型</option>
+                            <option value="bond">债券型</option>
+                            <option value="currency">货币型</option>
+                            <option value="preserve">保本型</option>
+                            <option value="QD">QDⅡ</option>
+                            <option value="other">其他</option>-->
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="fundNet" class="inline p_r10">基金净值（元）：大于 </label>
+                    <input style="width:168px" type="text" class="form-control" id="fundNet" placeholder="0.00" filter="fundNet" uudom="dom_314_841_302_545">
+                </div>
+            </form>
+            <form class="form-inline m_b10">
+                <div class="form-group m_r60">
+                    <label for="fundCompany" class="inline p_r10">产品管理人：</label>
+                    <input style="width:234px" type="text" class="form-control" id="fundCompany" placeholder="请输入基金公司名称" filter="fundCompany"
+                        uudom="dom_348_184_208_289">
+                </div>
+                <div class="form-group">
+                    <label for="selPro" class="inline p_r10">精选产品：</label>
+                    <select style="width:250px" class="form-control" id="selPro" filter="selPro" uudom="dom_708_959_429_947">
+                            <option value="ALL">全部</option>
+                            <option value="1">精选产品</option>
+                            <option value="0">非精选产品</option>
+                        </select>
+                </div>
+            </form>
+            <form class="form-inline m_b10">
+                <div class="form-group m_r60">
+                    <label for="saleStatus2" class="inline p_r10">上架状态：</label>
+                    <select style="width:250px" class="form-control" id="saleStatus2" filter="saleStatus" uudom="dom_708_959_429_947">
+                            <option value="ALL">全部</option>
+                            <!--<option value="INIT">初始</option>-->
+                            <option value="NEW_SALE">新产品上架</option>
+                            <option value="WAIT_SALE">待上架</option>
+                            <option value="ON_SALE">上架中</option>
+                            <option value="OFF_SALE">已下架</option>
+                            <!--<option value="FAIL_SALE">上架失败</option>-->
+                   </select>
+                </div>
+            </form>
+
+            <form class="form-inline m_b20 tar" style="margin-bottom:0px;">
+                <button id="btn_search" class="btn btn-primary" type="button" style="width:100px;" uudom="dom_424_164_124_134">搜 索</button>
+                <button id="clear_condition" class="btn btn-default" type="button" uudom="dom_597_621_257_434">清空条件</button>
+            </form>
+        </div>
+    </div>
+    <div uunode="1473391_315059_688154_714299">
+        <form id="withTable" style="display:none" class="form-inline m_b10 tar">
+            <button type="button" class="btn btn-default" id="proxyInteligent">配置智能货架</button>
+            <button id="add_tag" class="btn btn-default fr" type="button" uudom="dom_473_603_822_265">添加标签</button>
+            <button id="add_to_lib" class="btn btn-default fr" type="button" uudom="dom_184_204_802_193">添加到精选产品库</button>
+            <button id="remove_from_lib" class="btn btn-default" type="button" uudom="dom_608_901_218_257">从精选产品库移除</button>
+        </form>
+        <div id="productList" class="table-responsive">
+            <table id="table"></table>
+        </div>
+        <!--<div id="pagelist" class="tar"></div>-->
+    </div>
+</div>
+
+<!-- uuid:1473232_753737_983174_577200! -->

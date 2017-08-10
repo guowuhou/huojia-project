@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商户合作详情</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1495268_664761_384195_914927">
+    <div class="mywrap">
+        <nav role="navigation">
+            <div class="navbar-default" width="100%" style="height:50px;line-height:50px;">
+                <p style="font-size:20px;">当前位置:余额理财》商户合作</p>
+            </div>
+        </nav>
+        <div class="nav-tabs fujian1" style="margin-top:20px;">
+            <span style="color:#008ED1;font-size:30px;margin-left:20px;">商户合作</span>
+        </div>
+        <form class="form-horizontal" style="margin-bottom:40px;" role="form" >
+            <div class="form-group" id="" style="margin-top:20px;">
+                <label for="lastname" class="col-sm-2 control-label">接入渠道:</label>
+                <div class="col-sm-7">
+                    <p id="updateBy" style="margin-top: 6px;"></p>
+                </div>
+            </div>
+            <div class="form-group" id="">
+                <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>商户合作:</label>
+                <div class="col-sm-7">
+                    <select class="form-control w80"  id="merchantCoop" >
+                      
+                    </select>
+                </div>
+            </div>
+            <div class="form-group" id="">
+                <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>钱包名字:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control w80 fl _check nowrite" placeholder="请输入" value="" id="purseName">
+                </div>
+            </div>
+            <div class="form-group" id="">
+                <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>服务协议:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control w80 fl _check nowrite" value="" id="serviceAgree" placeholder="请输入文件链接">
+                </div>
+            </div>
+            <div class="form-group" id="">
+                <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>颜色模板:</label>
+                <div class="col-sm-7">
+                    <select class="form-control w80 3noEdit"  id="colorTemplate">
+                      
+                    </select>
+                </div>
+            </div>
+            <div class="form-group" id="">
+                <label for="lastname" class="col-sm-2 control-label">备注:</label>
+                <div class="col-sm-7">
+                    <textarea class="form-control w80 nowrite" rows="3" value=""  id="remark" maxLength=100 placeholder="请输入"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="nav-tabs fujian1">
+            <span style="color:#008ED1;font-size:30px;margin-left:20px;">添加功能</span>
+        </div>
+        <div class="form-horizontal" style="margin-bottom:40px;" role="form" >
+        <div style="margin-top:20px;margin-right:20px;width:90%;">
+            <button class="btn btn-info fr" id="addFunction" style="width:100px;height:40px;margin-bottom: 20px;" value="">添加</button>
+        </div>
+        <div style="width:75%;margin-left:5%">
+        <table id="merchantcooptable"></table>
+        </div>
+        <div style="margin-top:20px;margin-right:20px;width:90%;">
+            <button class="btn btn-info fr" style="width:100px;height:40px;" id="saveEditFunInfo" value="">保存</button>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- uuid:1495268_659784_127539_647815! -->

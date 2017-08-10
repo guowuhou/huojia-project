@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商户合作</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body uunode="1495183_378954_553611_878428">
+<div class="mywrap">
+        <nav role="navigation">
+            <div class="navbar-default" width="100%" style="height:50px;line-height:50px;">
+                <p style="font-size:20px;">当前位置:余额理财》商户合作</p> 
+            </div>
+              <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-primary" id="addMerchantCoop" style="width:150px;height:40px;">添加商户合作</button>
+              </form>
+         </nav>
+        <table id="merchantcooptable"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1495183_352519_793931_227330! -->

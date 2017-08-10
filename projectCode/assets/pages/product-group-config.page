@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>配置产品大类</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<style>
+    .table-center,.table-center th,.table-center td{
+        text-align: center;
+        vertical-align: middle!important;
+    }
+</style>
+
+<body>
+    <div class="mywrap" uunode="1479713_930604_449868_793119">
+        <prefab src="prefab/pro_nav.prefab"></prefab>
+        <div class="panel panel-primary" style="margin-top:30px">
+            <div class="panel-heading">已配置大类类型</div>
+            <table class="table">
+                <caption>
+                    <button class="btn btn-primary fr" style="width:150px" uudom="dom_816_130_113_327">新增大类</button>
+                </caption>
+            </table>
+            <table class="table table-center table-bordered table-hover" style="border:1px solid #ddd">
+                <thead>
+                    <tr>
+                        <th width="200">大类编码</th>
+                        <th>大类类型名称</th>
+                        <th width="180">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="daleiContentDiv">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- uuid:1479455_517254_305924_508608! -->

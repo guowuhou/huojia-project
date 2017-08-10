@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1477988_057348_591388_793878">
+    <title>产品基本信息</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1477989_518486_713725_777779">
+
+    <div class="mywrap">
+        <prefab src="prefab/pro_nav.prefab"></prefab> 
+        <div class="fr m_t5" updatetime="" style="margin-right:10px;">更新时间：</div>
+        <div id="tableContainer" class="m_l30 w80" style="margin-top:33px;"></div>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- uuid:1477987_856722_161043_385318! -->

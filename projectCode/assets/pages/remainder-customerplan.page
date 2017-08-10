@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>客户管理计划</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body class="mywrap" uunode="1495097_829108_113746_786670" style="padding-right:10px;">
+  <div class="navbar-default" style="height:40px;line-height:40px;">
+     <p style="margin-left:30px;color:#0580C7;font-size:medium">当前位置:闲钱+  》 客户管理计划</p>
+  </div>
+  <div id="checkStaus" class="navbar-default" style="height:300px;margin-top:8px;">
+    <div style="padding:20px;height:80px;">
+      <label for="planId">计划号：</label>
+      <input type="text" id="planId" filter="planId" class="form-control" style="width:auto;display:inline-block;">
+      <label for="ecifNo" style="margin-left:40px;">客户号：</label>
+      <input type="text" id="ecifNo" filter="ecifNo" class="form-control" style="width:auto;display:inline-block;">
+      <label for="planType" style="margin-left:40px;">计划类型：</label>
+      <select id="planType" class="form-control" filter="planType" style="width:auto;display:inline-block;">
+            <option value=" ">所有计划类型</option>
+            <option value="0">自动存</option>
+            <option value="1">存工资</option>
+      </select>
+    </div>
+    <div style="padding:20px;height:80px">
+      <label for="tradeType" style="margin-bottom:-12px;">交易类型：</label>
+      <select id="tradeType" class="form-control" filter="tradeType" style="width:auto;display:inline-block;">
+            <option value=" ">所有交易类型</option>
+            <option value="0">申购</option>
+            <option value="1">赎回</option>
+            <option value="2">申购冻结</option>
+      </select>
+      <label for="prdCode" style="margin-left:40px;margin-bottom:-12px;">挂钩产品：</label>
+       <input type="prdCode" id="prdCode" filter="prdCode" class="form-control" style="width:auto;display:inline-block;">
+      <label for="creatTime" style="margin-left:40px;margin-bottom:-12px;">创建时间：</label>
+        <label style="width:200px;margin-bottom:-12px;">
+          <div class="input-group date form_datetime t6 w200 up_datetime" data-date-format="yyyy-mm-dd hh:ii" data-link-field="startDate">
+            <input class="form-control nowrite"  type="text" value="" filter="startDate" readonly id="startDate">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div>
+        </label><span style="padding:20px;">到</span>
+        <label style="width:200px;margin-bottom:-12px;">
+          <div class="input-group date form_datetime t6 w200 up_datetime" data-date-format="yyyy-mm-dd hh:ii" data-link-field="endDate" style="float:left;">
+            <input class="form-control nowrite"  type="text" value="" filter="endDate" id="endDate" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div>  
+        </label>  
+    </div>
+    <div style="padding:20px;height:80px">
+      <label for="planStatus">计划状态：</label>
+       <select id="planStatus" class="form-control" filter="planStatus" style="width:auto;display:inline-block;">
+            <option value=" ">所有计划状态</option>
+            <option value="0">有效</option>
+            <option value="1">无效</option>
+      </select>
+      <label for="businessCoop" style="margin-left:40px;">商户合作：</label>
+      <select id="businessCoop" class="form-control" filter="businessCoop" style="width:auto;display:inline-block;">
+            <option value=" ">所有</option>
+      </select>
+    </div>
+    <form class="form-inline m_b10 tar" style="margin-right:20px;">
+        <a id="cleanSearchIterm" class="m_r15">清空条件</a>
+        <button id="customerPlanSearch" class="btn btn-primary" type="button">搜索</button>
+        <button id="btnLeadingout" class="btn btn-primary" style="margin-left:15px;" type="button">批量导出</button>
+        <a id="adownLoad" class="hide"></a>
+    </form>
+  </div>
+ <div style="margin-top:15px;">
+     <span id="recordtext"></span>
+ </div>
+  <div id="tableContainer" style="margin-top:20px;overflow:auto;">
+     <table id="tableList"></table>
+  </div>
+</body>
+<style>
+    
+</style>
+</html>
+<!-- uuid:1495072_052303_925543_706717! -->

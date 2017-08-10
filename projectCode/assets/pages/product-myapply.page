@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1476067_939086_739615_633921">
+  <title>我的申请</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body class="mywrap">
+  <div class="navbar-default" style="height:40px;line-height:40px;">
+     <p style="margin-left:30px;color:#0580C7;font-size:medium">审批管理  》 我的申请</p>
+  </div>
+  <div id="checkStaus" class="navbar-default" style="margin-top:8px;">
+    <div style="padding:25px">
+      <label for="applyType" class="inline">审核状态：</label>
+      <select id="applyType" class="form-control" filter="verifyStatus" style="width:150px;display:inline-block;" uunode="1476069_614782_849550_773405">
+            <option value="ALL">所有</option>
+            <option value="01">待审核</option>
+            <option value="02">审核成功</option>
+            <option value="03">审核不通过</option>
+            <option value="04">失效</option>
+      </select>
+      <label for="productCode" style="margin-left:43px;">产品代码：</label>
+      <input type="text" id="productCode" filter="prdCode" class="form-control" style="width:auto;display:inline-block;">
+      <br>
+      <label for="auditingType" style="margin-top:25px;">审核类型：</label>
+      <select id="auditingType" class="form-control" filter="operationType" style="width:150px;display:inline-block;" uunode="1476069_614782_849550_773405">
+            <option value="ALL">所有</option>
+            <option value="0001">创建新产品</option>
+            <option value="0002">编辑产品信息</option>
+            <option value="0005">新产品删除</option>
+            <option value="0006">配置智能货架</option>
+      </select>
+      <label for="taskType" style="margin-left:40px;">业务类型：</label>
+      <select id="taskType" class="form-control" filter="businessType" style="width:auto;display:inline-block;" uunode="1476069_614782_849550_773405">
+            <option value="ALL">所有</option>
+            <option value="001">产品工厂—本行理财产品</option>
+            <option value="002">产品工厂—代理理财产品</option>
+            <option value="003">产品货架—口袋</option>
+            <option value="004">产品货架—千人千面</option>
+            <option value="005">产品货架-金管家</option>
+            <option value="006">产品工厂-消费金融产品</option>
+            <option value="007">产品工厂-大额存单产品</option>
+            <option value="008">产品货架-厅堂</option>
+            <option value="009">产品货架-新口袋银行</option>
+            <option value="010">产品工厂-黄金定投产品</option>
+            <option value="011">产品工厂-黄金份额产品</option>
+            <option value="012">产品工厂-本行存款产品</option>
+      </select>
+    </div>
+    <form class="form-inline m_b10 tar" style="margin-right:40px;padding-bottom:10px" uunode="1493889_038225_875524_885837">
+        <a id="cleanterm" class="m_r15">清空条件</a>
+        <button id="btn_bankSearch" class="btn btn-primary" type="button">搜索</button>
+    </form>
+  </div>
+  <div style="margin-top:10px">
+     <button type="button" class="btn btn-info  ml30 fr" id="removeApply" uunode="1476165_504898_888169_270425">撤销申请</button>
+  </div>
+  <div id="tableContainer" style="margin-top:50px;" uunode="1476069_597102_342476_429089">
+     <table id="tableList"></table>
+  </div>
+</body>
+
+</html>
+<!-- uuid:1476067_932190_951237_311709! -->

@@ -1,0 +1,87 @@
+ <div class="mywrap" id="deposit">
+     <prefab src="prefab/head.prefab"></prefab>
+        <div class="panel panel-primary" uunode="1481610_722039_690207_560988">
+            <div class="panel-heading">筛选条件</div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <form class="form-inline m_b10">
+                        <!--<div class="form-group m_r15">
+                            <label for="prdTy" class="inline p_r10">产品种类 </label>
+                            <select class="form-control" id="prdTy" filter="certDepositClass">
+                            <option value="">全部</option>
+                            <option value="0">大额存单</option>
+                            <option value="1">定活宝-大额存单</option>
+                        </select>
+                        </div>-->
+                        <div class="form-group m_r15">
+                            <label for="prdCode" class="inline p_r10">产品Code&名称:</label>
+                            <input type="text" class="form-control" id="prdCode" filter="prdCode" uudom="dom_322_181_206_782">
+                        </div>
+                        <div class="form-group m_r15">
+                            <label for="prdId" class="inline p_r10">产品ID:</label>
+                            <input type="text" class="form-control" id="prdId" filter="productId" uudom="dom_923_139_807_257">
+                        </div>
+                        <div class="form-group m_r15 no_des">
+                            <label for="prdType" class="inline p_r10">存款类型:</label>
+                            <select class="form-control" id="prdType" filter="productType" uudom="dom_641_504_642_854">
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                    </form>
+                </li>
+                <li class="list-group-item">
+                    <form class="form-inline m_b10">
+                        <div class="form-group m_r15">
+                            <label for="prdDeadline" class="inline p_r10">产品期限:</label>
+                            <select class="form-control" id="prdDeadline" filter="saveDeadline" uudom="dom_449_125_878_727">
+                               <option value="">全部</option>
+                            </select>
+                        </div>
+                        <div class="form-group m_r15 no_des">
+                            <label for="prdTransition" class="inline p_r10">转让类型:</label>
+                            <select class="form-control" id="prdTransition" filter="resellType" uudom="dom_512_833_888_543">
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                        <div class="form-group m_r15">
+                            <label for="onState" class="inline p_r10">上架状态:</label>
+                            <select class="form-control" id="onState" filter="saleStatus" uudom="dom_525_920_198_708">
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                    </form>
+                </li>
+                <!--<li class="list-group-item">
+                    <form class="form-inline m_b10">
+                        <div class="form-group">
+                            <label for="prdStatus" class="inline p_r10">产品状态 </label>
+                            <select class="form-control" id="prdStatus" filter="status" >
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                    </form>
+                </li>-->
+                <li class="list-group-item">
+                    <form class="form-inline m_b10 tar">
+                        <a id="cleanIterm" class="m_r15">清空条件</a>
+                        <button id="search" class="btn btn-primary" type="button">搜索</button>
+                        <a id="adownLoad" class="hide"></a>
+                    </form>
+                </li>
+            </ul>
+        </div>
+     <div uunode="1481614_549379_386439_883956">
+       <div id="withTable" class="c mt30" style="margin-bottom:15px;">
+            <button id="deposit_add_tag" class="btn btn-default ml30 fr" style="margin-left:8px;" type="button">添加标签</button>
+            <button id="add_deposit_lib" class="btn btn-default ml30 fr" style="margin-left:8px;" type="button">添加到精选产品库</button>
+            <button id="remove_deposit_lib" class="btn btn-default fr" style="margin-left:8px;" type="button">从精选产品库移除</button>
+            <button type="button" class="btn btn-default fr" id="desInteligent">配置智能货架</button>
+       </div>
+       <div id="productList" class="table-responsive">
+        <table id="depositTable"></table>
+      </div>
+    </div>
+        <!--<div id="pagelist" class="tar"></div>-->
+        
+    </div>
+<!-- uuid:1481609_078614_148260_265503! -->

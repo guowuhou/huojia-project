@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1471593_340173_700006_239240" uunodename="node">
+   <title>财汇概括</title>
+  
+<prefab src="prefab/head.prefab"></prefab></head>
+<body uunode="1471831_384873_883087_640497" uunodename="node" class="ch_basicInfo">
+
+<div class="mywrap" uunode="1472783_439387_474096_989646"> 
+<prefab src="prefab/pro_nav.prefab"></prefab>
+<div class="fr m_t5 updatetime" id="updateTimeId"></div>
+<div class="proname">
+    <span><strong id="prdNameId">产品名称</strong></span>
+</div>
+<div class="m_l25">
+<div class="title_barline" id="basicInfoDiv">
+    <span class="title_font">基本信息</span>
+</div>
+<div class="title_barline">
+    <span class="title_font">投资目标</span>
+</div>
+<div>
+    <p id="investObj"></p>
+</div>
+
+<div class="title_barline">
+    <span class="title_font">投资理念</span>
+</div>
+<div>
+    <p id="investConcept"> </p>
+</div>
+
+<div class="title_barline">
+    <span class="title_font">风险收益特征</span>
+</div>
+<div>
+    <p id="riskReturn"></p>
+</div>
+
+<div class="title_barline">
+    <span class="title_font">投资范围</span>
+</div>
+<div>
+    <p id="investRange"></p>
+</div>
+
+<div class="title_barline">
+    <span class="title_font">基金经理</span>
+</div>
+<div>
+    <p id="fundManager"></p>
+</div>
+
+<div class="title_barline" id="fundTableDiv">
+    <span class="title_font">基金投资组合</span>
+</div>
+
+
+<div class="title_barline">
+    <span class="title_font">基金费率列表</span>
+</div>
+<table class="table table-bordered m_b40 m_t20" id="feeDetailTable">
+     <thead> 
+        <tr class="active"> 
+            <th>费率名称</th> 
+            <th>起始日期</th> 
+            <th>截止日期</th> 
+            <th>费率费用</th>
+            <th>购买金额（万元）</th> 
+            <th>持有期限（年）</th>
+        </tr> 
+    </thead> 
+   <tbody>
+    
+   </tbody>
+</table>
+
+</div>
+
+</div>
+</body>
+</html>
+<!-- uuid:1471593_315831_728342_116108! -->

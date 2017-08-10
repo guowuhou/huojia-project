@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en" uunode="">
+        <meta charset="UTF-8">
+        <title>金融消费筛选列表</title>
+        <prefab src="prefab/head.prefab"></prefab>
+        <style>
+            #name_code {
+                max-height: 300px
+            }
+            #table .dropdown-menu .editPrd {
+                display: none
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mywrap" uunode="1478238_629735_219264_672103">
+            <!-- 筛选条件-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">筛选条件</div>
+                 <div class="panel-body" style="background:#f5f5f5">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">贷款品种代码/名称</label>
+                            <div class="col-sm-2">
+                                 <input type="text" class="form-control" id="name">
+                            </div>
+                            <label class="col-sm-2 control-label">接入渠道</label>
+                            <div class="col-sm-2">
+                                <select class="form-control" id="dept">
+                                     <option value="">全部</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-2 control-label">上架状态</label>
+                            <div class="col-sm-2">
+                                <select class="form-control" id="status">
+                                     <option value="">全部</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="navbar-form navbar-right" role="search">
+                             <button type="button" class="btn btn-default btn-sm" style="width:150px; margin-right:30px" uudom="dom_338_612_536_204">清空条件</button>
+                             <button type="button" class="btn btn-primary" style="width:150px;" uudom="dom_844_262_383_233">搜索</button>
+                    </form>
+                 </div>
+            </div>
+            
+            <div id="total" style="margin-bottom:10px"></div>
+            
+            <!-- 展示表格数据 -->
+            <table id="table" uudom="dom_198_619_398_528"></table>
+            
+            <div id="updateTable" style="margin-top:30px"></div>
+        </div>
+    </body>
+</html>
+
+<!-- uuid:1477642_696268_702765_946957! -->

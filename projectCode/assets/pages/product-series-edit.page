@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>产品系列编辑</title>
+    <prefab src="prefab/head.prefab"></prefab>
+    <style>
+        .tdlabel {
+            width: 120px;
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        .tdedit {
+            padding: 2px !important;
+        }
+    </style>
+</head>
+
+<body uunode="1487299_676439_626439_573894">
+    <div class="mywrap">
+        <!-- 返回 -->
+       <div class="container-fluid" style="padding:0px;">
+                <form class="navbar-form navbar-left" role="search" style="padding:0px;">
+                    <button type="button" class="btn btn-default btn-sm" href="product-series.html">&lt;返回</button>
+                </form>
+        </div>
+        <!-- 标签信息 -->
+        <div style="border-bottom: 1px solid #A09393;">
+        <form class="form-horizontal" style="margin-bottom: 40px;" role="form">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">产品系列ID:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" value="{{name}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">产品系列名称:</label>
+                <div class="col-sm-7">
+                    <select class="form-control" uu-model="{{deptCode}}">
+                <option uu-for="item of deptlist" value="{{item.deptNo}}">{{item.deptName}}</option>
+            </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">所属部门:</label>
+             <div class="col-sm-7">
+               <select class="form-control" disabled>
+                  <option>是</option>
+               </select>
+             </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">是否产品系列:</label>
+             <div class="col-sm-7">
+               <select class="form-control" disabled>
+                  <option>是</option>
+               </select>
+             </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">备注:</label>
+                <div class="col-sm-7">
+                    <textarea class="form-control" rows="3">{{desc}}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">状态:</label>
+                <div class="col-sm-7">
+                    <select class="form-control" uu-model="{{status}}">
+                <option uu-for="item of statuslist" value="{{item.deptNo}}">{{item.deptName}}</option>
+            </select>
+                </div>
+            </div>
+        </form>
+        </div>
+        <!-- grid -->
+        
+        <div>
+            <form class="navbar-form navbar-right">
+                <button type="button" class="btn btn-primary" style="width:130px;" uudom="dom_269_695_947_472">添加标签</button>
+                <button type="button" class="btn btn-warning" style="width:130px;" uudom="dom_672_798_770_615">删除标签</button>
+            </form>
+            <table uudom="dom_582_968_224_497"></table>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" style="width:130px;float:right;" uudom="dom_741_348_706_886">保存</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- uuid:1487296_582953_401386_324835! -->

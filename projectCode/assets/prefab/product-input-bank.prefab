@@ -1,0 +1,142 @@
+<div class="mywrap myBankProduct" uunode="1473129_237497_736480_287349">
+    <prefab src="prefab/nav-input.prefab"></prefab>
+    <div>
+        <div class="panel panel-primary" uunode="1473229_438995_621749_909053">
+            <div class="panel-heading">筛选条件</div>
+            <ul class="list-group mybank c mt10">
+                <li class="list-group-item">
+                    <div class="allRight" id="minBuy">
+                        <label for="subMinAmt" class="inline p_r10" style="float: left;">认购起点：</label>
+                        <select class="form-control" id="subMinAmt" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                                    <option value="ALL">全部</option>
+                                    <option value="01">低于5万</option>
+                                    <option value="02">5（含）- 50万</option>
+                                    <option value="03">50（含）- 100万</option>
+                                    <option value="04">100万以上</option>
+                                </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="InvDay">
+                        <label for="investTerm" class="inline p_r10" style="float: left;">投资期限：</label>
+                        <select class="form-control" id="investTerm" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                                    <option value="ALL">全部</option>
+                                    <option value="01">一个月以内</option>
+                                    <option value="02">1（含）- 3个月</option>
+                                    <option value="03">3（含）- 6个月</option>
+                                    <option value="04">6个月（含）- 1年</option>
+                                    <option value="05">1年（含）以上</option>
+                                </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="prdRate">
+                        <label for="yearIncomeRate" class="inline p_r10" style="float: left;">预期年化收益率：</label>
+                        <select class="form-control" id="yearIncomeRate" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                                    <option value="ALL">全部</option>
+                                    <option value="02">0 - 3%</option>
+                                    <option value="03">3（含）- 5%</option>
+                                    <option value="04">5（含）- 10%</option>
+                                    <option value="05">10%（含）以上</option>
+                                </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="">
+                        <label for="isGuaranteed" class="inline p_r10" style="float: left;">是否保本：</label>
+                        <select class="form-control" id="isGuaranteed" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                                    <option value="ALL">全部</option>
+                                    <option value="BG,BF">保本</option>
+                                    <option value="FF">非保本</option>
+                                </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="riskLevel">
+                        <label for="riskLevel" class="inline p_r10" style="float: left;">风险等级 </label>
+                        <select class="form-control" id="riskLevel" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                                    <option value="ALL">全部</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="">
+                        <label for="isSelected" class="inline p_r10" style="float: left;">精选产品：</label>
+                        <select class="form-control" id="isSelected" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                            <option value="ALL">全部</option>
+                            <option value="1">精选产品</option>
+                            <option value="0">非精选产品</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="">
+                        <label for="saleStatus" class="inline p_r10" style="float: left;">上架状态：</label>
+                        <select class="form-control" id="saleStatus" uunode="1470977_043448_150447_745082" filter="cusAssetClass" style="width: 200px;float: left;margin-top: -6px;">
+                            <option value="ALL">全部</option>
+                            <!--<option value="INIT">初始</option>-->
+                            <option value="NEW_SALE">新产品上架</option>
+                            <option value="WAIT_SALE">待上架</option>
+                            <option value="ON_SALE">上架中</option>
+                            <option value="OFF_SALE">已下架</option>
+                            <!--<option value="FAIL_SALE">上架失败</option>-->
+                        </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="" id="">
+                        <label for="expirateDate" class="inline p_r10" style="float: left;">销售截止日期：</label>
+                        <div id="up_datetime" class="input-group date form_datetime t6 w200" data-link-format="yyyy-mm-dd" data-link-field="expirateDate">
+                            <input id="expirateDate" class="form-control" size="16" type="text" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight fl" id="">
+                        <label for="prdSerial" class="inline p_r10" style="float: left;">产品系列：</label>
+                        <input type="text" class="form-control mt6 w200" id="prdSerial" readonly uudom="dom_787_655_315_694">
+                        <button type="button" class="btn btn-default searchFlagBtn" uudom="dom_671_372_391_257">
+                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                </button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="">
+                        <label for="prdCode" class="inline p_r10" style="float: left;">产品代码：</label>
+                        <input type="text" class="form-control mt6 w200" id="prdCode" filter="prdCode">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="allRight" id="">
+                        <label for="keyWord" class="inline p_r10" style="float: left;">关键字：</label>
+                        <input type="text" class="form-control mt6 w200" id="keyWord">
+                    </div>
+                </li>
+            </ul>
+            <div class="c">
+                <button type="button" class="btn btn-info w100 ml30 fr mr10 mb10" uudom="dom_795_324_564_532" id="searchBtn">搜索</button>
+                <button type="button" class="btn btn-default fr mb10" uudom="dom_948_602_736_758">清空条件</button>
+            </div>
+        </div>
+        <div class="c mt30">
+            <button type="button" class="btn btn-default  ml30 fr" id="removePrd" uudom="dom_601_491_614_279">从精选产品库移除</button>
+            <button type="button" class="btn btn-default ml30 fr" id="addPrd" uudom="dom_289_422_113_570">添加到精选产品库</button>
+            <button type="button" class="btn btn-default ml30 fr" id="addIndexFlag" uudom="dom_101_687_992_862">添加标签</button>
+            <button type="button" class="btn btn-default fr" id="bankInteligent" uudom="dom_276_800_236_813">配置智能货架</button>
+        </div>
+
+    </div>
+
+
+    <div class="mt60">
+        <table id="productContainer"></table>
+    </div>
+</div>
+
+<!-- uuid:1473129_228459_146907_353365! -->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>待审批申请</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+  <div class="navbar-default mywrap" style="height:40px;line-height:40px;">
+     <p style="margin-left:30px;color:#0580C7;font-size:medium">审批管理  》 待审批申请</p>
+  </div>
+  <div class="mywrap" uunode="1476170_972511_667541_451849">
+    <!-- 导航 -->
+    <nav class="navbar" id="searchCondition" role="navigation" style="background-color:#f8f8f8;">
+        <div class="container-fluid">
+            <form class="navbar-form " role="search">
+                <div class="form-group" style="margin-top:20px;">
+                    <label for="checkStatus" class="inline">审核状态：</label>
+                    <select class="form-control" style="width:150px" filter="verifyStatus" id="checkStatus" uudom="dom_900_935_775_986">
+                        <option value="ALL">所有</option>
+                        <option value="01" selected="true">待审批</option>
+                        <option value="02">审核成功</option>
+                        <option value="03">审核不通过</option>
+                        <option value="04">失效</option>
+                    </select>
+                    <label for="productCode" style="margin-left:40px;">产品代码：</label>
+                    <input type="text" id="prdCode" filter="prdCode" class="form-control" style="width:auto;display:inline-block;">  
+                    <br>
+                    <label for="auditingType" style="margin-top:25px;">审核类型：</label>
+                    <select id="auditingType" class="form-control" filter="operationType" style="width:150px;display:inline-block;" uunode="1476069_614782_849550_773405">
+                            <option value="ALL">所有</option>
+                            <option value="0001">创建新产品</option>
+                            <option value="0002">编辑产品信息</option>
+                            <option value="0005">新产品删除</option>
+                            <option value="0006">配置智能货架</option>
+                    </select>
+                    <label for="taskType" style="margin-left:40px;">业务类型：</label>
+                    <select id="taskType" class="form-control" filter="businessType" style="width:auto;display:inline-block;" uunode="1476069_614782_849550_773405">
+                        <option value="ALL">所有</option>
+                        <option value="001">产品工厂—本行理财产品</option>
+                        <option value="002">产品工厂—代理理财产品</option>
+                        <option value="003">产品货架—口袋</option>
+                        <option value="004">产品货架—千人千面</option>
+                        <option value="005">产品货架-金管家</option>
+                        <option value="006">产品工厂-消费金融产品</option>
+                        <option value="007">产品工厂-大额存单产品</option>
+                        <option value="008">产品货架-厅堂</option>
+                        <option value="009">产品货架-新口袋银行</option>
+                        <option value="010">产品工厂-黄金定投产品</option>
+                        <option value="011">产品工厂-黄金份额产品</option>
+                        <option value="012">产品工厂-本行存款产品</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <form class="form-inline m_b10 tar" style="margin-right:40px;padding-bottom:10px" uunode="1493889_038225_875524_885837">
+             <a id="cleanIterm" class="m_r15">清空条件</a>
+             <button id="btn_Search" class="btn btn-primary" type="button">搜索</button>
+        </form>
+    </nav>
+    <div class="form-group" style="float:right">
+        <button type="button" class="btn btn-success m_r15" uudom="dom_652_554_957_839">批准申请</button>
+        <button type="button" class="btn btn-warning" uudom="dom_640_231_691_241">拒绝申请</button>
+    </div>
+    <table uudom="dom_132_442_749_214"></table>
+</div>
+</body>
+
+</html>
+<!-- uuid:1476169_005581_132220_442646! -->

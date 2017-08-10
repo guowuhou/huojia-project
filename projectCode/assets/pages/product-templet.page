@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>产品模板</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body uunode="1487321_314564_463554_964554">
+    <div class="mywrap" id="productTem">
+        <nav role="navigation">
+            <div class="navbar-default">
+                <div style="padding:10px;">
+                    <form class="navbar-form" role="search" uudom="dom_556_861_483_339">
+                        <label for="productSeries">产品模板:</label>
+                        <input type="text" id="productTemplet" class="form-control">
+                        <label style="margin-left:200px;">产品类型:</label>
+                    </form>
+                    <div class="form-inline m_b10 tar">
+                      <button id="a_cleanterm" class="btn btn-default" style="width:100px;">清空条件</button>
+                      <button id="group_search" class="btn btn-primary" type="button" style="width:100px;">搜索</button> 
+                    </div>
+                </div>
+                <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-primary" style="width:150px;" uudom="dom_517_939_321_924">定义新模板</button>
+                </form>
+                </div>
+            </nav>
+        
+        <table uudom="dom_454_235_868_727"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1487319_800276_573779_366054! -->

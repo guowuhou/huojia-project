@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1487837_563041_724359_252684">
+   <title>万得概括</title>
+  
+<prefab src="prefab/head.prefab"></prefab></head>
+<body class="ch_basicInfo">
+
+<div class="mywrap" uunode="1487837_719521_239580_960745"> 
+<prefab src="prefab/pro_nav.prefab"></prefab>
+<div class="fr m_t5 updatetime" id="updateTimeId"></div>
+<div class="proname">
+    <span><strong id="prdNameId">产品名称</strong></span>
+</div>
+<div class="m_l25">
+<div id="basicInfoDiv">
+    
+</div>
+<div class="title_barline">
+    <span class="title_font">投资目标</span>
+</div>
+<div>
+    <p id="investObj"></p>
+</div>
+
+<div class="title_barline">
+    <span class="title_font">投资理念</span>
+</div>
+<div>
+    <p id="investConcept"> </p>
+</div>
+<div class="title_barline">
+    <span class="title_font">决策依据</span>
+</div>
+<div>
+    <p id="policydepend"> </p>
+</div>
+<div class="title_barline">
+    <span class="title_font">投资范围</span>
+</div>
+<div>
+    <p id="investRange"></p>
+</div>
+
+<div class="title_barline" id="fundexpress">
+    <span class="title_font">基金业绩表现</span>
+</div>
+<table class="table table-bordered m_b40 m_t20" id="fundachiexpress">
+     <thead> 
+        <tr class="active"> 
+            <th>期间</th> 
+            <th>收益率（%）</th>
+        </tr> 
+    </thead> 
+   <tbody>
+    
+   </tbody>
+</table>
+<div class="title_barline">
+    <span class="title_font">排名</span>
+</div>
+<table class="table table-bordered m_b40 m_t20" id="range">
+     <thead> 
+        <tr class="active"> 
+            <th>时间</th> 
+            <th>涨幅（%）</th>
+            <th>同类基金收益率（%）</th> 
+            <th>同类排名</th>
+            <th>排名变动</th> 
+        </tr> 
+    </thead> 
+   <tbody>
+    
+   </tbody>
+</table>
+<div class="title_barline">
+    <span class="title_font">分红历史</span>
+</div>
+<table class="table table-bordered m_b40 m_t20" id="incomehistory">
+     <thead> 
+        <tr class="active"> 
+            <th>年份</th> 
+            <th>权益登记日</th>
+            <th>分红发放日</th> 
+            <th>每份分红（元）</th>
+        </tr> 
+    </thead> 
+   <tbody>
+    
+   </tbody>
+</table>
+<div class="title_barline" id="fundmanager">
+    <span class="title_font">现任基金经理</span>
+</div>
+<div class="title_barline">
+    <span class="title_font">基金费率列表</span>
+</div>
+<table class="table table-bordered m_b40 m_t20" id="feeDetailTable">
+     <thead> 
+        <tr class="active"> 
+            <th>公告时间</th> 
+            <th>费率类型代码</th> 
+            <th>费率类型</th> 
+            <th>收费类型</th>
+            <th>金额下限</th> 
+            <th>金额上限</th>
+            <th>持有年限下限</th> 
+            <th>持有年限上限</th> 
+            <th>持有期限单位</th> 
+            <th>费率费用</th>
+            <th>是否上限费率</th> 
+            <th>费率补充说明</th>
+            <th>场所代码</th>
+            <th>场所</th> 
+        </tr> 
+    </thead> 
+   <tbody>
+    
+   </tbody>
+</table>
+
+</div>
+
+</div>
+</body>
+</html>
+<!-- uuid:1487837_545980_756879_269367! -->

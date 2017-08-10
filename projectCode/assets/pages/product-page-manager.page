@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en" uunode="1493718_028865_246686_347149">
+    <meta charset="UTF-8">
+    <title>推荐页面管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+<div class="mywrap">
+        <!-- 导航 -->
+        <nav role="navigation">
+            <div class="navbar-default">
+              <div style="padding:10px;" uunode="1493720_207153_211758_236895">
+                <form class="navbar-form" role="search" id="pageModule">
+                    <label for="parentCode" class="inline p_r10">接入渠道</label>
+                    <select id="recList" class="form-control" filter="parentCode">
+                    </select>
+                    <label style="margin-left:30px" for="taCode" class="inline p_r10">商户合作</label>
+                    <select id="fXList" class="form-control" filter="merchantCode">
+                        
+                    </select>
+                    
+                    <input type="text" class="form-control" id="prdCode" filter="pageModuleCode" style="margin-left:30px" uunode="1494059_090653_699089_477248">
+                    <button id="label_search" class="btn btn-primary" type="button" style="width:100px;margin-left:30px">搜索</button> 
+                </form>
+                <div class="form-inline m_b10 tar">
+                    <button id="createModle" class="btn btn-primary" type="button" style="width:100px;">创建</button> 
+                </div>
+              </div>
+                </div>
+            </nav>
+        
+        <table id="table" uudom="dom_559_654_272_885"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1493717_407671_328751_686554! -->

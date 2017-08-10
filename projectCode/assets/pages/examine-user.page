@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+    <div class="mywrap" uunode="1479880_786871_847361_147450">
+        <div class="panel panel-primary" style="margin-bottom:10px;">
+            <div class="panel-heading">平台管理/用户管理/查看用户</div>
+            <div class="panel-body">
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp用户UM_ID：</label>
+                        <span uudom="dom_330_225_776_127"></span>
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp用户名称：</label>
+                        <span uudom="dom_317_605_975_175"></span>
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp状态：</label>
+                        <span uudom="dom_155_409_719_657"></span>
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">首次添加操作人：</label>
+                        <span uudom="dom_960_715_188_730"></span>
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp首次添加时间：</label>
+                        <span uudom="dom_431_863_769_432"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">用户所拥有的角色：</label>
+                    </div>
+            </form>
+            <div class="table-responsive">
+                <table uudom="dom_399_406_750_721"></table>
+            </div>
+            <form class="form-inline m_b20 tar" style="margin-bottom:0px;margin-top:20px;">
+                <a href="user-manager.html" class="btn btn-primary" style="width:100px;">返 回</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<!-- uuid:1479880_193591_940776_356387! -->

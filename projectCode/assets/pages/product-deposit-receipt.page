@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>产品工厂</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+    <div class="mywrap" id="deposit">
+        <div class="panel panel-primary">
+            <div class="panel-heading">筛选条件</div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <form class="form-inline m_b10">
+                         <!--<div class="form-group m_r15">
+                            <label for="prdTy" class="inline p_r10">产品种类 </label>
+                            <select class="form-control" id="prdTy" filter="productClass">
+                            <option value="">全部</option>
+                            <option value="0">大额存单</option>
+                            <option value="1">定活宝-大额存单</option>
+                            </select>
+                        </div>-->
+                        <div class="form-group m_r15">
+                            <label for="prdCode" class="inline p_r10">产品Code&名称</label>
+                            <input type="text" class="form-control" id="prdCode" filter="prdCode" uunode="1477883_342952_503533_401302">
+                        </div>
+                        <div class="form-group m_r15">
+                            <label for="productId" class="inline p_r10">产品ID</label>
+                            <input type="text" class="form-control" id="productId" filter="productId" uunode="1493794_604049_249950_789054">
+                        </div>
+                        <div class="form-group m_r15 no_des">
+                            <label for="prdType" class="inline p_r10">存款类型 </label>
+                            <select class="form-control" id="prdType" filter="productType" uunode="1477883_410741_103489_265866">
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                    </form>
+                </li>
+                <li class="list-group-item">
+                    <form class="form-inline m_b10">
+                        <div class="form-group m_r15">
+                            <label for="prdDeadline" class="inline p_r10">产品期限 </label>
+                            <select class="form-control" id="prdDeadline" filter="saveDeadline" uunode="1477883_470151_201292_408994">
+                               <option value="">全部</option>
+                            </select>
+                        </div>
+                        <div class="form-group m_r15">
+                            <label for="channel" class="inline p_r10">接入渠道 </label>
+                            <select class="form-control" id="channel" filter="salesChannels" uunode="1477883_494686_336902_838838">
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                        <div class="form-group m_r15">
+                            <label for="onState" class="inline p_r10">上架状态 </label>
+                            <select class="form-control" id="onState" filter="saleStatus" uunode="1477883_515838_863933_661571">
+                            <option value="">全部</option>
+                        </select>
+                        </div>               
+                    </form>
+                </li>
+                <li class="list-group-item no_des">
+                    <form class="form-inline m_b10">
+                        <!--<div class="form-group m_r15">
+                            <label for="prdStatus" class="inline p_r10">产品状态 </label>
+                            <select class="form-control" id="prdStatus" filter="status" uunode="1477883_611971_554462_875222">
+                            <option value="">全部</option>
+                        </select>
+                        </div>-->
+                         <div class="form-group m_r15">
+                            <label for="prdTransition" class="inline p_r10">转让类型</label>
+                            <select class="form-control" id="prdTransition" filter="resellType" uunode="1477883_441684_345263_262605">
+                            <option value="">全部</option>
+                        </select>
+                        </div>
+                    </form>
+                </li>
+                <li class="list-group-item">
+                    <form class="form-inline m_b10 tar" uunode="1477883_746861_794385_663980">
+                        <a id="cleanIterm" class="m_r15">清空条件</a>
+                        <button id="search" class="btn btn-primary" type="button">搜索</button>
+                        <a id="adownLoad" class="hide"></a>
+                    </form>
+                </li>
+            </ul>
+        </div>
+         <div>
+             <div style="margin:10px;">
+                     <div class="fl_r inline m_b10" uunode="1482205_581751_673911_404954">
+                           <button id="deposit_synch" style="margin-right:7px" class="btn btn-primary">同步</button>
+                     </div>
+            </div>
+        </div>
+        <div id="productList" style="width:100%" class="table-responsive fl_r" uunode="1477894_692332_526326_787364">
+            <div>
+                <span id="recordtext"></span>
+                <span style="float:right;margin-bottom:10px;" id="qrytimeshow"></span>  
+            </div>
+            <table id="table"></table>
+        </div>
+        <div id="pagelist" class="tar"></div>
+        
+    </div>
+</body>
+
+</html>
+<!-- uuid:1477881_695518_594857_845847! -->

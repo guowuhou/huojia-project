@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>组合产品详情</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<style>
+    .table-center,.table-center th,.table-center td{
+        text-align: center;
+        vertical-align: middle!important;
+    }
+</style>
+
+<body>
+    <div class="mywrap" uunode="1480399_850523_879537_258569">
+        <div class="panel panel-primary" style="margin-top:30px">
+            <div class="panel-heading">组合产品
+                <button class="btn btn-default fr btn-xs" onclick="history.back()">返回</button>
+            </div>
+            <div class="panel-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="centerText control-label col-sm-2"><span class="star">*</span> 组合名称</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" maxlength="50" name="combProductName" value="">
+                        </div>
+                        <label class="centerText control-label col-sm-2"><span class="star">*</span> 产品组合风险等级</label>
+                        <div class="col-sm-3">
+                            <select class="form-control" name="prdRiskLevel">
+                                <option value="1">低</option>
+                                <option value="2">中低</option>
+                                <option value="3">中</option>
+                                <option value="4">中高</option>
+                                <option value="5">高</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="centerText control-label col-sm-2"><span class="star">*</span> 预期收益率(%)</label>
+                        <div class="col-sm-3">
+                            <input type="text" maxlength="10" class="form-control" name="prdRate" value="">
+                        </div>
+                        <label class="centerText control-label col-sm-2"><span class="star">*</span> 所属部门</label>
+                        <div class="col-sm-3">
+                            <select class="form-control" name="sourceCode">
+                                <option value="W">智能投顾</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="centerText control-label col-sm-2">描述</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" rows="4" maxlength="1000" name="describe"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="centerText control-label col-sm-2"><span class="star">*</span> 组合方案比例(%)</label>
+                    </div>
+                </div>				
+	        </div>
+            <ul class="list-group" id="proListContent-ul">
+                
+            </ul>
+            <div class="panel-footer" style="text-align: right">
+                <button class="btn btn-primary" id="add-submit-btn">确认提交</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- uuid:1480384_435853_389136_948687! -->

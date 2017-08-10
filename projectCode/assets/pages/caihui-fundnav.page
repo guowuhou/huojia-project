@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1471943_494151_646444_695155" uunodename="head">
+    <title>财汇历史净值</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+
+<div class="mywrap"> 
+    <prefab src="prefab/pro_nav.prefab"></prefab>
+    <div uunode="1471943_775465_684308_683310" uunodename="node" style="margin-top:20px;">
+        <table id="table">
+            <thead>
+            <tr class="info">
+                <th data-field="navPubishDateString" data-halign="center" data-align="center">公告日期</th>
+                <th data-field="navString" data-halign="center" data-align="center">单位净值</th>
+                <th data-field="accumulatedNAVString" data-halign="center" data-align="center">累计净值</th>
+                <th data-field="navChgString" data-halign="center" data-align="center">涨跌幅</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+  
+</body>
+</html>
+<!-- uuid:1471943_423787_349580_319053! -->

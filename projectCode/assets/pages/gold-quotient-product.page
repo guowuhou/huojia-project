@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1484018_392970_860189_612772">
+  <title>黄金份额产品</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+
+  <div class="mywrap">
+    <div style="font-size:40px;margin-left:20px;">黄金份额产品</div>
+    <div class="m_t25">
+      <prefab src="prefab/gold_quotient_product.prefab"></prefab>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+<!-- uuid:1484018_378901_712683_122988! -->

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>理财产品</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1476509_403150_283604_452857">
+  <div class="mt_20 mr_10 h70">
+    <div id="styleSel">
+      <label for="proTypeList" class="inline p_r10 fl">产品类型：</label>
+      <select class="form-control" id="proTypeList" style="width: 200px;left: right;margin-top: -6px;">
+          <option value="bank">本行理财产品</option>
+          <option value="proxy">代理理财产品</option>
+      </select>
+    </div>
+  </div>
+  <div id="tableContainer" class="aaa">
+    <div id="list_proxy">
+      <!--<prefab src="prefab/product-list-proxy.prefab"></prefab>-->
+    </div>
+    <div id="list_bank" style="display:none">
+      <!--<prefab src="prefab/product-list-bank.prefab"></prefab>-->
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- uuid:1476501_233455_352324_473886! -->

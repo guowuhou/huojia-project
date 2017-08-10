@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1487924_123243_841464_926609">
+    <title>财汇投资组合</title>
+    <prefab src="prefab/head.prefab"></prefab>
+    <style>
+      hr{margin:0 70% 20px 0;}
+      select{width:200px !important;margin:20px;float: right;}
+      .mainwrap {margin-top:30px;}
+     </style>
+</head>
+
+<body>
+
+<div class="mywrap"> 
+  <prefab src="prefab/pro_nav.prefab"></prefab>
+  <select class="form-control" id="finddates">
+  </select>
+  <div class="mainwrap" uunode="1487924_191399_272040_994175">
+    <h2 uudom="dom_140_770_716_759">资产配置</h2>
+    <hr>
+    <table uudom="dom_158_391_870_924"></table>
+    <h2>股票投资组合</h2>
+    <hr>
+    <table uudom="dom_770_990_728_546"></table>
+    <h2>行业投资组合</h2>
+    <hr>
+    <table uudom="dom_891_378_465_229"></table>
+     <h2>债券投资组合</h2>
+    <hr>
+    <table uudom="dom_131_534_850_296"></table>
+  </div>
+</div>
+  
+</body>
+</html>
+<!-- uuid:1487924_118620_696627_433821! -->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1483519_987186_489125_580426">
+  <title>黄金定投产品</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+
+  <div class="mywrap">
+    <div style="font-size:40px;margin-left:20px;">黄金定投产品</div>
+    <div class="m_t25">
+      <prefab src="prefab/gold_fixed_investment.prefab"></prefab>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+<!-- uuid:1483519_973158_722761_845123! -->

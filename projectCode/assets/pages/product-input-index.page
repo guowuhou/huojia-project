@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1475992_005609_685153_395686">
+  <title>本行产品库</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1476342_052997_687098_314232">
+  <div class="mt_20 mr_10 h70">
+    <div class="fl mr_40 ml_10">
+      <label for="channelId" class="inline p_r10 fl">接入渠道：</label>
+      <select class="form-control" id="channelId" style="width: 200px;float: left;margin-top: -6px;">
+           
+        </select>
+    </div>
+    <div class="fl">
+      <label for="productType" class="inline p_r10 fl">产品类型：</label>
+      <select class="form-control" id="productType" style="width: 200px;float: left;margin-top: -6px;">
+          
+      </select>
+    </div>
+  </div>
+  <div id="tableContainer" uunode="1475982_927877_863211_865226" class="aaa">
+    <div id="input_bank">
+      <prefab src="prefab/product-input-bank.prefab"></prefab>
+    </div>
+    <div id="input_proxy" style="display:none">
+      <prefab src="prefab/product-input-proxy.prefab"></prefab>
+    </div>
+    <div id="input_deposit" style="display:none">
+      <prefab src="prefab/product-input-deposit.prefab"></prefab>
+    </div>
+    <div id="gold_fixed_investment" style="display:none">
+      <prefab src="prefab/intelligent_gold_fixed.prefab"></prefab>
+    </div>
+    <div id="gold_quotient_investment" style="display:none">
+      <prefab src="prefab/intelligent_gold_quotient.prefab"></prefab>
+    </div>
+    <div id="bank_deposit" style="display:none">
+      <prefab src="prefab/intelligent_bank_deposit.prefab"></prefab>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- uuid:1475982_919938_274256_365035! -->

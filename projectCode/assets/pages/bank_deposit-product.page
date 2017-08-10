@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head uunode="1492650_679115_793036_196036">
+        <title>本行存款产品</title>
+        <prefab src="prefab/head.prefab"></prefab>
+    </head>
+    <body>
+        <div class="mywrap" id="bank_deposit">
+            <div class="panel panel-primary">
+                <div class="panel-heading">筛选条件</div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <form class="form-inline m_b10">
+                            <div class="form-group m_r15">
+                                <label for="prdCode" class="inline p_r10">产品代码&名称</label>
+                                <input type="text" class="form-control" id="prdCode" filter="prdCode" uunode="1492657_910858_721917_271655">
+                            </div>
+                            <div class="form-group m_r15">
+                                <label for="productId" class="inline p_r10">币种</label>
+                                <select class="form-control" id="ccy" filter="ccy" uunode="1492651_252515_683166_754063">
+                                    <option value="">全部</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="list-group-item">
+                        <form class="form-inline m_b10">
+                            <div class="form-group" uunode="1492652_567758_981375_873829">
+                                <label for="proLabel" class="inline p_r10">产品标签 </label>
+                                <input type="text" class="form-control" id="proLabel" readonly="readonly" filter="prdTag">
+                                <button type="button" class="btn btn-default" id="bank_proLabel">
+                                <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </div>
+                            <div class="form-group m_r15">
+                                <label for="productId" class="inline p_r10">上架状态</label>
+                                <select class="form-control" id="saleStatus" filter="saleStatus">
+                                    <option value="">全部</option>
+                                    <option value="ON_SALE">上架中</option>
+                                    <option value="OFF_SALE">已下架</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="list-group-item">
+                        <form class="form-inline m_b10 tar" uunode="1492656_475029_216664_768258">
+                            <a id="cleanIterm" class="m_r15">清空条件</a>
+                            <button id="search" class="btn btn-primary" type="button">搜索</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            
+            <div style="margin:10px;">
+                <div class="fl_r inline m_b10">
+                    <button id="deposit_synch" style="margin-right:7px" class="btn btn-primary">同步</button>
+                </div>
+            </div>
+            
+            <div id="productList" style="width:100%" class="table-responsive fl_r" uunode="1492657_662406_191038_572611">
+                <div>
+                    <span id="recordtext"></span>
+                    <span style="float:right;margin-bottom:10px;" id="qrytimeshow"></span>  
+                </div>
+                <table id="table"></table>
+            </div>
+            <div id="pagelist" class="tar"></div>
+        </div>
+    </body>
+</html>
+<!-- uuid:1492595_381831_503224_465583! -->

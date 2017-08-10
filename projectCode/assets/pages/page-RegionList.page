@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1494063_711473_559651_268591">
+  <title>页面区域</title>
+  <prefab src="prefab/head.prefab"></prefab>
+  <style>
+    .clearRow {
+      zoom:1
+    }
+    .clearRow :after {
+      clear:both;
+      content:'';
+      height:0;
+      display: block;
+      width: 0;
+      height: 0;
+      visibility: hidden
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="mywrap" id="rolemanager" uunode="1494063_638634_838251_144502">
+    <div class="form-inline m_b10">
+        <button id="goBackPageRegionList" class="btn btn-default" style="float:right">返回</button>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-6" style="float:left;margin-left:50px">
+        <form class="navbar-form">
+            <label for="labelName">接入渠道:</label>
+            <p class="form-control-static" id="pageChannel"></p>
+        </form>
+        <form class="navbar-form">
+            <label for="labelName">商户合作:</label>
+            <p class="form-control-static" id="merchantCode"></p>
+        </form>
+        <form class="navbar-form">
+            <label for="labelName">页面模块Code:</label>
+            <p class="form-control-static" id="copyModuleCode" filter="pageModuleCode"></p>
+        </form>
+        <form class="navbar-form">
+            <label for="labelName">页面模块名称:</label>
+            <p class="form-control-static" id="pageModuleName" filter="pageModuleName"></p>
+        </form>
+        <form class="navbar-form">
+            <label for="labelName">图片链接:</label>
+            <p class="form-control-static" filter="pictureUrl"></p>
+        </form>
+        <form class="navbar-form">
+            <label for="labelName">创建人:</label>
+            <p class="form-control-static" filter="createBy"></p>
+        </form>
+         <form class="navbar-form">
+            <label for="labelName">创建时间:</label>
+            <p class="form-control-static" filter="createTime"></p>
+        </form>
+      </div> 
+      <div class="col-lg-6" style="float:right;width:40%;">
+        <form class="navbar-form">
+            <label for="labelName">备注:</label>
+            <div class="">
+              <textarea class="form-control" style="resize:none;width:250px" rows="6" filter ="remark" disabled></textarea>
+            </div>
+        </form>
+         <form class="navbar-form">
+            <label for="labelName">跳转链接:</label>
+            <p class="form-control-static" filter="redirectUrl"></p>
+        </form>
+         <form class="navbar-form">
+            <label for="labelName">更新人:</label>
+            <p class="form-control-static" filter="updateBy"></p>
+        </form>
+         <form class="navbar-form">
+            <label for="labelName">更新时间:</label>
+            <p class="form-control-static" filter="updateTime"></p>
+        </form>
+      </div>
+    </div>
+    <form class="form-inline m_b10" style="position:relative">
+        <div class="form-group m_r15">
+            <input type="text" class="form-control" id="pageRegionCode" filter="pageRegionCode" style="margin-left:30px" uunode="1494407_535044_527318_797286">
+        </div>
+        <div class="form-group m_r15">
+            <button id="page_search" class="btn btn-primary" type="button" style="width:100px;margin-left:30px">搜索</button> 
+        </div>
+        <div class="form-group m_r15" style="position:absolute;right:30px">
+            <button id="page_create" class="btn btn-primary" type="button" style="width:100px;margin-left:30px;margin-left:300px">创建</button> 
+        </div>
+    </form>
+    <table id="table" uudom="dom_224_208_444_645"></table>
+  </div>
+</body>
+
+</html>
+<!-- uuid:1494063_614482_177568_522203! -->

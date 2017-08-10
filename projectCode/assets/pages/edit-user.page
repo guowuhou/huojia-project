@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+    <div class="mywrap" uunode="1479882_818227_574999_749559">
+        <div class="panel panel-primary" style="margin-bottom:10px;">
+            <div class="panel-heading">平台管理/用户管理/编辑用户</div>
+            <div class="panel-body">
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp用户UM_ID：</label>
+                        <span uudom="dom_106_995_734_202"></span>
+                    </div>
+                </form>
+                <form id="test" class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="fundCompany" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp用户名称：</label>
+                        <input style="width:250px" type="text" class="form-control" uudom="dom_500_157_937_646">
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="fundCompany" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp状态：</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="Status" id="inlineRadio1" value="1" checked="true"> 启用
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="Status" id="inlineRadio2" value="0"> 禁用
+                        </label>
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">首次添加操作人：</label>
+                        <span uudom="dom_561_606_735_679"></span>
+                    </div>
+                </form>
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">&nbsp&nbsp&nbsp&nbsp首次添加时间：</label>
+                        <span uudom="dom_310_712_504_822"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            <form class="form-inline m_b10 m_t20" style="margin-right:15px;">
+                <label for="prdCode" class="inline p_r10 fl">用户所拥有的角色</label>
+                <button class="btn btn-primary fr" type="button" style="width:100px;" uudom="dom_827_859_586_191">删除</button>
+                <button class="btn btn-primary fr m_r20" type="button" style="width:100px;" uudom="dom_564_207_245_822">添加角色</button>
+            </form>
+            <div class="c"></div>
+            <div class="table-responsive m_t20">
+                <table uudom="dom_987_618_127_915"></table>
+            </div>
+            <form class="form-inline m_b50 tar" style="margin-right:15px;margin-top:20px">
+                <button class="btn btn-primary" type="button" style="width:100px;" uudom="dom_874_685_535_786">保存</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<!-- uuid:1479882_077922_284547_214590! -->

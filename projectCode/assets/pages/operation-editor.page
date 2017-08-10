@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1479782_685384_791948_133089">
+  <title>角色管理</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1479784_627010_347556_500609">
+  <div class="mywrap" id="rolemanager">
+    
+  </div>
+</body>
+
+</html>
+
+<!-- uuid:1479782_679418_519661_698878! -->

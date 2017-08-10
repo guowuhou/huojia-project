@@ -1,0 +1,185 @@
+<div class="productCustomLess" uunode="1475286_506004_665617_580417">
+  <div class="nav-tabs fujian1">
+    <span class="uploadtext">产品基本信息</span>
+  </div>
+  <form class="form-horizontal" style="margin-bottom: 40px;" role="form">
+    <div class="form-group" id="">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>产品类型:</label>
+      <div class="col-sm-7">
+        <select class="form-control w80" id="prdTypeSelect" style="display:none">
+         
+        </select>
+        <input type="text" class="form-control w80 fl nowrite" id="prdTypeInput" readonly>
+      </div>
+    </div>
+    <div class="form-group" id="">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>产品代码:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control w80 fl _check nowrite" id="prdCode" uudom="dom_312_388_946_674">
+        <span class="glyphicon glyphicon-ok fl mt_3 ml_10 ft20 clv gc" style="display:none"></span>
+        <span class="glyphicon glyphicon-remove fl mt_3 ml_10 ft20 cred gc" style="display:none"></span>
+      </div>
+    </div>
+    <div class="form-group" id="">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>产品名称:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control w80 fl _check nowrite" id="prdName">
+        <span class="glyphicon glyphicon-ok fl mt_3 ml_10 ft20 clv gc" style="display:none"></span>
+        <span class="glyphicon glyphicon-remove fl mt_3 ml_10 ft20 cred gc" style="display:none"></span>
+      </div>
+    </div>
+    <div class="form-group" id="">
+      <label for="lastname" class="col-sm-2 control-label">产品描述:</label>
+      <div class="col-sm-7">
+        <textarea class="form-control w80 nowrite" rows="3" id="prdDesc"></textarea>
+      </div>
+    </div>
+    <div class="form-group" id="saleStatus" style="display:none">
+      <label for="lastname" class="col-sm-2 control-label">上架状态:</label>
+      <div class="col-sm-7">
+        <p style="margin-top: 6px;" id="saleStatusText"></p>
+      </div>
+    </div>
+  </form>
+  <div class="nav-tabs fujian1">
+    <span class="uploadtext">产品自定义信息</span>
+  </div>
+
+  <form class="form-horizontal" style="margin-bottom: 40px;" role="form" id="editDiv">
+    <div class="form-group">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>产品系列:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control w80 fl nowrite" id="productSeries" readonly>
+        <button type="button" class="btn btn-default searchFlagBtn ml_10 noedit" uudom="dom_671_372_391_257">
+            <span class="glyphicon glyphicon-zoom-in"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastname" class="col-sm-2 control-label">产品经理名称:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control w80 nowrite" id="prdManagerName">
+      </div>
+    </div>
+    <div class="form-group" id="cusAssetClass">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>客户资产配置分类:</label>
+      <label class="checkbox-inline">
+          <input type="radio" name="cusAssetClassificationRadio" id="cusAssetClassificationRadio1" value="A0005">不区分
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="cusAssetClassificationRadio" id="cusAssetClassificationRadio2" value="A0001"> 现金类
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="cusAssetClassificationRadio" id="cusAssetClassificationRadio3" value="A0002"> 固收类
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="cusAssetClassificationRadio" id="cusAssetClassificationRadio4" value="A0003"> 权益类
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="cusAssetClassificationRadio" id="cusAssetClassificationRadio5" value="A0004"> 另类投资
+      </label>
+    </div>
+    <div class="form-group" id="marketingStatus">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>营销状态:</label>
+      <label class="checkbox-inline">
+          <input type="radio" name="marketingStatusRadio" id="marketingStatusRadio1" value="S0004">不区分
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="marketingStatusRadio" id="marketingStatusRadio2" value="S0001">推荐
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="marketingStatusRadio" id="marketingStatusRadio3" value="S0002">热销
+      </label>
+      <label class="checkbox-inline">
+          <input type="radio" name="marketingStatusRadio" id="marketingStatusRadio4" value="S0003">重点
+      </label>
+    </div>
+    <div class="form-group" id="customersLabel">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>客层分类:</label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio1" value="L0001">大众客户
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio2" value="L0003"> 财富客户
+      </label>
+      <label class="checkbox-inline m20">
+          <input type="checkbox" name="customersLabelRadio" id="customersLabelRadio3" value="L0002"> 私行客户
+      </label>
+    </div>
+    <div class="form-group" id="salesChannels">
+      <label for="lastname" class="col-sm-2 control-label"><span class="star">*</span>货架接入渠道:</label>
+    
+    </div>
+    <div class="form-group" id="editDateDiv" style="display:none">
+      <label for="lastname" class="col-sm-2 control-label">设置上下架参考时间:</label>
+      <div class="col-sm-7 w500">
+        <div class="w330">
+          <label for="onSaleTime" class="inline p_r10 date1">上架日期：</label>
+          <div class="input-group date form_datetime t6 w200 up_datetime" data-date-format="yyyy-mm-dd hh:ii" data-link-field="onSaleTime">
+            <input id="onSaleTime" class="form-control nowrite" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div>
+        </div>
+        <div class="w330 fl mt_15">
+          <label for="offSaleTime" class="inline p_r10 date1">下架日期：</label>
+          <div class="input-group date form_datetime t6 w200 up_datetime" data-date-format="yyyy-mm-dd hh:ii" data-link-field="offSaleTime">
+            <input id="offSaleTime" class="form-control nowrite" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+          </div>
+        </div>
+        <label class="checkbox-inline fl " style="margin: 14px 0 0 20px;">
+          <input type="checkbox" id="noEndDate">无结束日期
+       </label>
+      </div>
+    </div>
+    <div class="form-group" id="readDateDiv" style="display:none">
+      <label for="lastname" class="col-sm-2 control-label">设置上下架参考时间:</label>
+      <div class="col-sm-7 w500">
+        <div class="w330">
+          <label for="onSaleTime1" class="inline p_r10 date1">上架日期：</label>
+          <div class="input-group date form_datetime t6 w240">
+            <input id="onSaleTime1" class="form-control w240" size="16" type="text" value="" readonly>
+          </div>
+        </div>
+        <div class="w330 fl mt_15">
+          <label for="offSaleTime1" class="inline p_r10 date1">下架日期：</label>
+          <div class="input-group date form_datetime t6 w240">
+            <input id="offSaleTime1" class="form-control w240" size="16" type="text" value="" readonly>
+          </div>
+        </div>
+        <label class="checkbox-inline fl " style="margin: 14px 0 0 20px;">
+          <input type="checkbox" id="noEndDate1">无结束日期
+       </label>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="nav-tabs fujian1">
+    <span class="uploadtext">附件</span>
+    <button type="button" class="btn btn-info fw_b  fr" id="uploadAttach">上传附件</button>
+  </div>
+  <table id="attachListContainer" uunode="1476502_025753_589175_786002">
+
+  </table>
+
+  <!--<div class="nav-tabs fujian2">
+    <form id="uploadForm" method="post" target="upload_iframe" enctype="multipart/form-data">
+      <span class="uploadtext">附件上传</span>
+      <input type="file" id="fileField" name="files " class="upload" style="filter: alpha(opacity:0);" multiple="multiple">
+      <span class="glyphicon glyphicon-plus uploadIcon"></span>
+      <input type="text" style="display:none" readonly="true" name="prdCode" id="prdCodeId">
+      <input type="text" style="display:none" readonly="true" name="prdType" id="prdTypeId">
+    </form>
+  </div>
+  <div>只支持PDF,DOC,DOCX,XLS,XLSX,JPG,PNG,RTF;最多上传10个文件，每个文件最大为10MB</div>
+  <ul class="list-group1" id="attachListTable">
+
+  </ul>-->
+  <div class="fr noedit"><button type="button" class="btn btn-info fw_b mr_25 mb_35 mt_20" id="submitBtn">提交审核</button></div>
+  <a id="downLoadAttach" style="display:none"></a>
+  <iframe id="upload_iframe" style="width:100%;height:200px;display: none" name="upload_iframe">
+  </iframe>
+</div>
+<!-- uuid:1475286_421741_470517_959147! -->

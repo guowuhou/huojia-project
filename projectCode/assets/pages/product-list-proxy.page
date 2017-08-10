@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1478845_908413_971363_687433">
+    <title>产品货架</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+    <div id="tableContainer" class="aaa">
+        <div id="list_proxy">
+            <div class="mywrap" id="proxy">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">筛选条件</div>
+                    <ul class="list-group">
+                        <!-- TA代码 产品代码 产品类型 -->
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10" >
+                                <div class="form-group m_r15">
+                                    <label for="taCode" class="inline p_r10">TA代码/名称 </label>
+                                    <input type="text" class="form-control" id="taCode" filter="tACode" uunode="1470912_774414_30095_547181">
+                                </div>
+                                <div class="form-group m_r15">
+                                    <label for="prductCode" class="inline p_r10">产品代码/名称 </label>
+                                    <input type="text" class="form-control" id="prductCode" filter="prdCode" uunode="1476264_282607_652079_570386">
+                                </div>
+                                <div class="form-group m_r15">
+                                    <label for="proType" class="inline p_r10">产品类型 </label>
+                                    <select class="form-control" id="proType" filter="prdType" uunode="1471862_320606_532213_841405">
+                                <option value="ALL">全部</option>
+                            </select>
+                                </div>
+                                 <div class="form-group m_r15" uunode="1481683_866673_968573_325173">
+                                    <label for="prdLabel" class="inline p_r10">产品标签：</label>
+                                    <input type="text" class="form-control mt6 w200" id="prdLabel" filter="prdTag" readonly>
+                                   <button type="button" class="btn btn-default searchFlagBtn" id="btn_prdLabel">
+                                    <span class="glyphicon glyphicon-zoom-in"></span>
+                                  </button>
+                                </div>
+                            </form>
+                        </li>
+                        <!-- 产品状态 -->
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10">
+                                <div class="form-group">
+                                    <label for="proStatus" class="inline p_r10">产品状态 </label>
+                                    <div class="checkbox" id="proStatus" uunode="1470975_863442_245766_455222" filter="status"></div>
+                                </div>
+                            </form>
+                        </li>
+                        <!-- 产品属性 客户资产配置 产品系列 上架状态 -->
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10">
+                                <div class="form-group m_r15">
+                                    <label for="proProperty" class="inline p_r10">产品属性 </label>
+                                    <select class="form-control" id="proProperty" uunode="1470976_699132_865076_838394" filter="prdArr">
+                                <option value="ALL">全部</option>
+                            </select>
+                                </div>
+                                <div class="form-group m_r15">
+                                    <label for="assetAllocation" class="inline p_r10">客户资产配置 </label>
+                                    <select class="form-control" id="assetAllocation" uunode="1470977_043448_150447_745082" filter="cusAssetClass">
+                                <option value="ALL">全部</option>
+                            </select>
+                                </div>
+                                <div class="form-group m_r15" uunode="1471065_593118_469687_80932">
+                                    <label for="proSeries" class="inline p_r10">后端分类 </label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="proSeries" readonly="readonly" filter="prdSerial" style="width:100px;">
+                                        <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default" id="btn_proSeries">+</button>
+                                </span>
+                                    </div>
+                                </div>
+                                <!--<div class="form-group form-group-sm ">
+                            <label for="shelfUpStaus" class="inline p_r10">信息完整 </label>
+                            <select class="form-control" id="shelfUpStaus" filter="completeFlag" uunode="1471597_609680_77199_700333">
+                                <option value="ALL">全部</option>
+                            </select>
+                        </div>-->
+                                <div class="form-group">
+                                    <label for="putawayStatus" class="inline p_r10">上架状态 </label>
+                                    <select class="form-control" id="putawayStatus" filter="saleStatus" uunode="1476001_043969_782799_517520">
+                            <option value="">全部</option>
+                        </select>
+                                </div>
+                            </form>
+                        </li>
+                        <!-- 操作按钮 -->
+                        <li class="list-group-item">
+                            <form class="form-inline tar m_b10" uunode="1470997_693346_70855_15110">
+                                <button id="btn_search" class="btn btn-primary" type="button" style="width:100px;">搜索</button>
+                                <button id="btn_leadingupdate" class="btn btn-primary" type="button">批量更新产品信息</button>
+                                <button id="btn_leadingout" class="btn btn-default" type="button">批量导出</button>
+                                <button id="a_cleanterm" class="btn btn-default">清空条件</button>
+                                <a id="adownLoad" class="hide"></a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="margin:10px;">
+                        <span id="recordtext"></span>
+                        <div class="fl_r inline m_b10">
+                            <a href="new-public-custom.html?type=02"><button id="btn_newproduct" onclick="window.open('new-public-custom.html?type=02','_self')" class="btn btn-primary">定义新产品</button></a>
+                            <button id="proxy_synch" class="btn btn-primary " uunode="1476348_642672_183437_440238">同步</button>
+                        </div>
+
+                        <!--<span id="qrytimeshow" class="fl_r"></span>-->
+                    </div>
+                </div>
+                <div id="productshelf" style="width:100%" class="table-responsive fl_r" uunode="1471068_677665_850713_108935">
+                    <table id="proxyTable"></table>
+                </div>
+                <div id="pagelist" class="tar" uunode="1471058_017362_64027_84005"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- uuid:1470895_275529_469470_22494! -->

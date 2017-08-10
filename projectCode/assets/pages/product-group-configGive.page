@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>组合产品审核</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<style>
+    .table-center,.table-center th,.table-center td{
+        text-align: center;
+        vertical-align: middle!important;
+    }
+</style>
+
+<body>
+
+    <div class="mywrap" uunode="1480053_558792_790004_724629">
+        <prefab src="prefab/pro_nav.prefab"></prefab>
+        <div class="panel panel-primary" style="margin-top:30px">
+            <div class="panel-heading">组合产品审核</div>
+            <!--<table class="table">
+                    <caption>
+                        <button class="btn btn-primary fr" style="width:150px;visibility:hidden">占位</button>
+                    </caption>
+                </table>
+            <table class="table table-center table-bordered table-hover" style="border:1px solid #ddd">
+                <thead>
+                    <tr>
+                        <th>所属部门</th>
+                        <th>组合产品代码</th>
+                        <th>组合名称</th>
+                        <th>组合风险等级</th>
+                        <th>申请理由</th>
+                        <th>创建人</th>
+                        <th>最近修改时间</th>
+                        <th>组合状态</th>
+                        <th width="110">查看组合详情</th>
+                        <th width="120">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>智能投顾</td>
+                        <td>12345</td>
+                        <td>xxxxxxxxxx</td>
+                        <td>中高</td>
+                        <td>XXXXXXXXXXXX</td>
+                        <td>XXXXX</td>
+                        <td>2016.11.21</td>
+                        <td>上架</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" style="width:70px">详情</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">同意</button>
+                            <button class="btn btn-sm btn-primary">拒绝</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>-->
+        </div>
+        <div style="width:100%" class="table-responsive fl_r">
+            <table id="configGiveTable"></table>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- uuid:1479691_172756_246575_154391! -->

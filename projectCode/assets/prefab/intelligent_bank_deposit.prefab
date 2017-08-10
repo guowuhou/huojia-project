@@ -1,0 +1,23 @@
+
+
+ <div class="mywrap" id="bank_deposit" uunode="1492830_215598_335983_898224">
+     <prefab src="prefab/head.prefab"></prefab>
+     <ul class="list-group">
+        <li class="list-group-item" style="border:none;margin-bottom:0">
+            <form class="form-inline m_b10 tar">
+                <button id="bank_deposit_search" class="btn btn-primary" type="button">搜索</button>
+                <a id="adownLoad" class="hide"></a>
+            </form>
+        </li>
+      <ul>
+       <div id="withTable" class="c mt30" style="margin-bottom:15px;">
+            <button id="bank_deposit_add_tag" class="btn btn-default ml30 fr" style="margin-left:8px;" type="button">添加标签</button>
+            <button id="add_bank_deposit_lib" class="btn btn-default ml30 fr" style="margin-left:8px;" type="button">添加到精选产品库</button>
+            <button id="remove_bank_deposit_lib" class="btn btn-default fr" style="margin-left:8px;" type="button">从精选产品库移除</button>
+            <button type="button" class="btn btn-default fr" id="bank_desInteligent">配置智能货架</button>
+       </div>
+       <div id="productList" class="table-responsive">
+         <table id="bank_depositTable"></table>
+      </div>
+ </div>
+<!-- uuid:1492830_162371_520959_738861! -->

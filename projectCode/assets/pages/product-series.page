@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>产品系列</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body uunode="1487234_928683_239565_691297">
+    <div class="mywrap">
+        <nav role="navigation">
+            <div class="navbar-default">
+                <div style="padding:10px;">
+                    <form class="navbar-form" role="search" uudom="dom_212_993_919_246">
+                        <label for="productSeries">产品系列名称:</label>
+                        <input type="text" id="productSeries" class="form-control">
+                        <label style="margin-left:200px;">所属部门:</label>
+                    </form>
+                    <div class="form-inline m_b10 tar">
+                      <button id="group_search" class="btn btn-primary" type="button" style="width:100px;">搜索</button> 
+                    </div>
+                </div>
+                <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-primary" style="width:150px;" uudom="dom_558_327_721_932">创建</button>
+                    <button type="button" class="btn btn-primary" style="width:150px;" uudom="dom_639_490_229_694">删除</button>
+                </form>
+                </div>
+            </nav>
+        
+        <table uudom="dom_552_110_195_623"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1487227_739723_165856_164838! -->

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1478845_661680_372840_626765">
+    <title>本行理财产品</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+    <div id="tableContainer" class="aaa">
+        <div id="list_bank">
+            <div class="mywrap" id="bank">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">筛选条件</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10">
+                                <div class="form-group m_r15">
+                                    <label for="prdCode" class="inline p_r10">产品代码/名称</label>
+                                    <!--<div id="prdCode"  uunode="1476253_063024_485280_506876" filter="prdCode"></div>-->
+                                    <input type="text" class="form-control" id="prdCode" uunode="1476253_063024_485280_506876" filter="prdCode">
+                                </div>
+                                <div class="form-group m_r15">
+                                    <label for="scrollModel" class="inline p_r10">滚动模式 </label>
+                                    <select class="form-control" id="scrollModel" filter="cycleMode" uunode="1473128_904774_990150_688446">
+                            <option value="">全部</option>
+                        </select>
+                                </div>
+                                <div class="form-group m_r15">
+                                    <label for="Currencies" class="inline p_r10">币种 </label>
+                                    <select class="form-control" id="Currencies" filter="currency" uunode="1473129_009837_415507_538956">
+                            <option value="">全部</option>
+                        </select>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10">
+
+                                <div class="form-group m_r15" uunode="1473129_067288_872268_615522">
+                                    <label for="proSeries" class="inline p_r10">后端分类 </label>
+                                    <input type="text" class="form-control" id="bank_proSer" readonly="readonly" filter="productSeries">
+                                    <button type="button" class="btn btn-default" id="bank_btnProSer">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
+                                <div class="form-group m_r15">
+                                    <label for="riskLevel" class="inline p_r10">风险等级 </label>
+                                    <select class="form-control" id="riskLevel" filter="riskLevel" uunode="1473141_215183_510579_323388">
+                                    <option value="">全部</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" uunode="1481686_795860_994242_999393">
+                                    <label for="proLabel" class="inline p_r10">产品标签 </label>
+                                    <input type="text" class="form-control" id="proLabel" readonly="readonly" filter="prdTag">
+                                    <button type="button" class="btn btn-default" id="bank_proLabel">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10">
+                                <!--<div class="form-group">
+                            <label for="shelfUpStaus" class="inline p_r10">接入渠道 </label>
+                            <input class="form-control" id="shelfUpStaus" uunode="1473129_133954_643941_607943" style="min-width:200px">                     
+                        </div>
+                        <div class="form-group">
+                            <label for="CompleteInfo" class="inline p_r10">信息完整 </label>
+                            <select class="form-control" id="CompleteInfo" filter="isComplete" uunode="1473129_175933_827164_774363">
+                            <option value="">全部</option>
+                           </select>
+                        </div>-->
+                             <div class="form-group m_r15">
+                                <label for="saleStatus" class="inline p_r10">上架状态 </label>
+                                <select class="form-control" id="saleStatus" filter="saleStatus" uunode="1475999_782661_894042_436533">
+                                 <option value="">全部</option>
+                                 </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="productStatus" class="inline p_r10">产品状态 </label>
+                                <select class="form-control" id="productStatus" filter="productStatus" uunode="1492487_257965_502332_759928">
+                                   <option value="">全部</option>
+                                 </select>
+                              </div>
+                           </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="form-inline m_b10 tar" uunode="1473129_229782_815152_606486">
+                                <a id="a_cleanterm" class="m_r15">清空条件</a>
+                                <button id="btn_bankSearch" class="btn btn-primary" type="button">搜索</button>
+                                <button id="btn_leadingout" class="btn btn-primary" type="button">批量导出</button>
+                                <button id="btn_leadingupdate" class="btn btn-primary" type="button">批量更新产品信息</button>
+                                <a id="adownLoad" class="hide"></a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="margin:10px;">
+                        <span id="recordtext"></span>
+                        <div class="fl_r inline m_b10">
+                            <a href="new-public-custom.html?type=01"><button id="btn_newproduct" onclick="window.open('new-public-custom.html?type=01','_self')" class="btn btn-primary">定义新产品</button></a>
+                            <button id="bank_synch" class="btn btn-primary " uunode="1476327_587250_240572_396762">同步</button>
+                        </div>
+
+                        <!--<span id="qrytimeshow" class="fl_r"></span>-->
+                    </div>
+                </div>
+                <div id="productshelf" style="width:100%" class="table-responsive fl_r" uunode="1473129_275639_759031_309971">
+                    <table id="bankTable"></table>
+                </div>
+                <div id="pagelist" class="tar"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- uuid:1473128_741219_862637_462025! -->

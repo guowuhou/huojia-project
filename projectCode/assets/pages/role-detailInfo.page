@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1480128_589116_613635_467267">
+  <title>查看角色</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1480128_678440_656427_879775">
+  <div class="mywrap" id="roleDetail">
+    
+  </div>
+</body>
+
+</html>
+
+<!-- uuid:1480128_583362_947456_836099! -->

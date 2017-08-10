@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1488352_395086_375554_144748">
+  <title>本行存款产品</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+
+  <div class="mywrap">
+    <div style="font-size:40px;margin-left:20px;">存款产品</div>
+    <div class="m_t25">
+      <prefab src="prefab/fixed-clown.prefab"></prefab>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+<!-- uuid:1488352_390773_151867_949615! -->

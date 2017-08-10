@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>产品模板基本信息</title>
+  <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body>
+  <div class="mywrap">
+    <div class="m_t25">
+      <prefab src="prefab/product-templet-detailinfo.prefab"></prefab> 
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+<!-- uuid:1487657_381203_712594_177418! -->

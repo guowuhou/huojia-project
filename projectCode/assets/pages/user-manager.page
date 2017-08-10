@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+    <div class="mywrap" uunode="1479804_011463_937676_380100">
+        <div class="panel panel-primary" style="margin-bottom:10px;">
+            <div class="panel-heading">平台管理/用户管理</div>
+            <div class="panel-body">
+                <form class="form-inline m_b10">
+                    <div class="form-group m_r60">
+                        <label for="prdCode" class="inline p_r10">用户UM_ID：</label>
+                        <input maxlength="30" style="width:150px" type="text" class="form-control" id="prdCode" placeholder="请输入UM_ID" filter="prdCode" uudom="dom_670_663_811_647">
+                    </div>
+                    <div class="form-group">
+                        <label for="riskLevel" class="inline p_r10">用户状态：</label>
+                        <select  class="form-control" id="riskLevel" filter="riskLevel" uudom="dom_779_330_620_950">
+                                <option value="ALL">全部状态</option>
+                                <option value="1">启用</option>
+                                <option value="0">禁用</option>
+                        </select>
+                    </div>
+                </form>
+                <form class="form-inline m_b20 tar" style="margin-bottom:0px;">
+                    <button id="btn_search" class="btn btn-primary" type="button" style="width:100px;" uudom="dom_724_272_231_679">搜 索</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <form id="withTable" class="form-inline m_b10 tar" style="margin-right:15px;">
+                <button id="add_tag" class="btn btn-primary" type="button" style="width:100px;" uudom="dom_803_894_680_946">创建用户</button>
+            </form>
+            <div id="productList" class="table-responsive" style="padding-bottom:30px;">
+                <table id="table" uudom="dom_561_314_489_381"></table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- uuid:1479799_066937_888723_554066! -->

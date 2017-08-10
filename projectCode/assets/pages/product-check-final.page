@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>上线审核</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+    <div class="mywrap" uunode="1473408_855936_564200_139813">
+        <!-- 导航 -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-success" style="width:150px;" uudom="dom_180_837_379_622">通过</button>
+                    <button type="button" class="btn btn-warning" style="width:150px;" uudom="dom_665_225_856_520">不通过</button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </nav><!-- /.container-fluid -->
+        <!-- grid -->
+        <table uudom="dom_147_330_827_821"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1473408_848855_146923_646758! -->

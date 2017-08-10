@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head  uunode="1479112_229571_882763_605819">
+   <title>消费信息</title>
+  <style>
+      .table tr :first-child {
+          width: 30%
+      }
+  </style>
+   <prefab src="prefab/head.prefab"></prefab>
+   </head>
+    <body>
+        <div class="mywrap" uunode="1478050_204963_588558_878234">
+              <prefab src="prefab/pro_nav.prefab"></prefab>
+               <div class="fr m_t5" id="updatetime" style="margin:20px 10px;">更新时间：</div>
+               <div class="panel panel-primary" style="margin-top:50px">
+                    <div class="panel-heading">产品详情</div>
+                    <table class="table table-bordered" uudom="dom_611_644_805_962">
+                        
+                    </table>
+                </div>
+        </div>
+    </body>
+</html>
+<!-- uuid:1477728_268449_147206_644899! -->

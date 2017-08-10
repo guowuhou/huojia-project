@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1476066_475927_644221_503757">
+    <title>推荐管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+    <div class="mywrap">
+        <div class="panel-default" style="height:35px; clear:both;margin-bottom:10px;">
+            <form class="form-inline" style="margin-bottom:10px;" uunode="1475893_649742_467008_701384">
+                <div class="form-group">
+                    <label for="taCode" class="inline p_r10">接入渠道</label>
+                    <select id="recList" class="form-control">
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taCode" class="inline p_r10">商户合作</label>
+                    <select id="fXList" class="form-control">
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taCode" class="inline p_r10">页面模块</label>
+                    <select id="pageList" class="form-control" uudom="dom_744_852_579_896">
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taCode" class="inline p_r10">推荐状态</label>
+                    <select id="recStatus" class="form-control">
+                        
+                    </select>
+                </div>
+                
+            </form>
+        </div>
+        
+        <div class="proModelContainer">
+            
+        </div>
+     </div>
+</body>
+</html>
+<!-- uuid:1473132_382706_867284_915235! --> 

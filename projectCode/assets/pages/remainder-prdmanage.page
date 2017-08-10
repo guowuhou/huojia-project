@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+<div class="mywrap" uunode="1492668_473494_132017_943052">
+        <nav role="navigation">
+            <div class="navbar-default" width="100%" style="height:50px;line-height:50px;">
+                <p style="font-size:20px;">当前位置:余额理财》产品管理</p> 
+            </div>
+          <div id="checkStaus" class="navbar-default" style="height:120px;margin-top:8px;">
+            <div style="padding:20px;height:80px">
+            <label for="accessChannelCode">接入渠道：</label>
+            <select id="accessChannelCode" class="form-control" filter="accessChannelCode" style="width:auto;display:inline-block;">
+                    <option value="">所有</option>
+            </select>
+            <label for="accessMerchantCode" style="margin-left:40px;">商户合作：</label>
+            <select id="accessMerchantCode" class="form-control" filter="accessMerchantCode" style="width:auto;display:inline-block;">
+                    <option value="">所有</option>
+            </select>
+            </div>
+            <form class="form-inline m_b10 tar" style="margin-right:40px;">
+                <a id="cleanSearchItem" class="m_r15">清空条件</a>
+                <button id="prdManagerSearch" class="btn btn-primary" type="button">搜索</button>
+            </form>
+        </div>
+              <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-primary" id="addProduct" style="width:150px;height:40px;">添加产品</button>
+              </form>
+         </nav>
+        <!-- grid -->
+        <table id="prdmanagetable"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1492657_271857_553860_305637! -->

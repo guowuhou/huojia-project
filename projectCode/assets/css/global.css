@@ -1,0 +1,246 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mywrap {
+    margin: 8px;
+}
+
+.td-padding {
+    padding: 0px 3px !important;
+}
+
+.inline {
+    display: inline !important;
+}
+
+a {
+    cursor: pointer
+}
+
+.fl_r {
+    float: right
+}
+
+.ma {
+    margin: 0 auto;
+}
+
+.m_r15 {
+    margin-right: 15px;
+}
+.m_r20 {
+    margin-right: 20px;
+}
+
+.m_r60 {
+    margin-right: 60px;
+}
+
+.m_b20 {
+    margin-bottom: 20px;
+}
+
+.padding0 {
+    padding: 0px !important;
+}
+
+.p_l50 {
+    padding-left: 50px;
+}
+
+.p_r5 {
+    padding-right: 5px;
+}
+
+.p_r10 {
+    padding-right: 10px;
+}
+
+.p_r50 {
+    padding-right: 50px;
+}
+
+.m_b10 {
+    margin-bottom: 10px;
+}
+.m_b20 {
+    margin-bottom: 20px;
+}
+
+.m_b50 {
+    margin-bottom: 50px;
+}
+
+.tar {
+    text-align: right
+}
+
+.tac {
+    text-align: center
+}
+
+.tal {
+    text-align: left
+}
+
+.bor_b {
+    border-bottom: 1px solid #dddddd
+}
+
+.fr {
+    float: right;
+}
+
+.m_t5 {
+    margin-top: 5px;
+}
+.m_t20 {
+    margin-top: 20px;
+}
+
+.date-time-remove {
+    background-color: #eee;
+    display: table-cell;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.width_250 {
+    width: 250px;
+}
+
+.c {
+    zoom: 1;
+    clear: both;
+}
+
+.c:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.mt_3 {
+    margin-top: 3px;
+}
+
+.ml_10 {
+    margin-left: 10px;
+}
+
+.ft20 {
+    font-size: 20px;
+}
+
+.ml_15 {
+    margin-left: 15px;
+}
+
+.fw_b {
+    font-weight: bold;
+}
+
+.mr_25 {
+    margin-right: 25px;
+}
+
+.mb_35 {
+    margin-bottom: 35px;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.mr_10 {
+    margin-right: 10px;
+}
+
+.h70 {
+    height: 70px;
+}
+
+.ml_50 {
+    margin-left: 50px;
+}
+
+.w330 {
+    width: 330px;
+}
+
+.w500 {
+    width: 500px;
+}
+
+.mt_15 {
+    margin-top: 15px;
+}
+.star {
+  color: #ff6600;
+  font-family: "\5B8B\4F53";
+  margin: 0 5px 0 0;
+}
+.mw90{
+    min-width: 90px;
+}
+.mr_40{
+    margin-right: 40px;   
+}
+.w210{
+    width: 210px;
+}
+.w240{
+    width: 240px;
+}
+.m8{
+    margin:8px 8px;
+}
+.card-tip6{
+  position: absolute;
+  text-align: left;
+  color: #666;
+  font-size: 12px;
+  line-height: 18px;
+  background: rgb(232, 245, 245);
+  border: 1px solid rgb(166, 162, 162);
+  padding: 4px 5px;
+  z-index: 19;
+  -webkit-user-select: none;
+  right: -24px;
+  top: 15px;
+  height: 82px;
+  width: 84px;
+}
+.w80{
+  width:80%;
+}
+.mr_30{
+    margin-right:30px;
+}
+.mb_15{
+    margin-bottom: 15px;
+}
+.bp10{
+    border: 1px solid rgb(173, 165, 165);
+    padding: 10px;
+}

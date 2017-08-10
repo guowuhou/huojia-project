@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1487931_105383_875126_549222">
+    <title>财汇历史净值</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body uunode="1487931_141644_379445_598384">
+<div class="mywrap"> 
+    <prefab src="prefab/pro_nav.prefab"></prefab>
+    <div style="margin-top:20px;">
+    <div class="fr m_t5 updatetime" id="updateTime"></div>
+    <div style="margin-left:20px;">
+        <label>选择数据源</label>
+        <select style="width:200px;margin-left:10px;" id="dataSource"> 
+          <option value="0">基金代销系统-行情数据</option>
+          <option value="1">万得数据</option>
+        </select>
+    </div>
+    <table id="table" uudom="dom_681_957_477_166">
+        
+    </table>
+    </div>
+</div>
+  
+</body>
+</html>
+<!-- uuid:1487931_100442_280015_177423! -->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head uunode="1475128_131018_488181_986201">
+  <title>产品开放平台</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="const/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="const/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+  <script src="const/js/html5shiv.min.js"></script>
+  <script src="const/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue-light sidebar-mini">
+
+
+<nav class="bcoms-top-nav navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <img src="const/images/logo1.png">
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="/bcoms/index.jsp">旧版入口</a></li>-->
+            <li style="margin-top:15px;margin-right:35px;font-size:17px;" id='hostName'></li>
+            <li><a  id="_back">返回后管菜单</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="wrapper bcoms-wrap">
+  <header class="main-header">
+    <!-- Logo -->
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-left:0px">
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" uunode="1475129_450638_356608_768344"></ul>
+      </div>
+
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar bcoms-sidemenu">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <ul class="sidebar-menu" uudom="dom_400_966_284_967">
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <div shadow="" class="content-wrapper bcoms-iframe-wrap">
+    <iframe class="bcoms-iframe" name="bcoms-iframe" frameborder="0" uudom="dom_623_302_783_150"></iframe>
+  </div>
+
+</div>
+
+</body>
+</html>
+<!-- uuid:1475127_825274_481995_208281! -->

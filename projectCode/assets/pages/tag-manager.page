@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>标签管理</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+<body>
+<div class="mywrap">
+        <!-- 导航 -->
+        <nav  role="navigation">
+            <div class="navbar-default" uunode="1473405_642415_883742_333028">
+              <div style="padding:10px;">
+                <form class="navbar-form" role="search" uunode="1473405_435146_194937_544865">
+                    <label for="labelName">标签名称:</label>
+                    <input type="text" id="labelName" class="form-control">
+                    <label style="margin-left:100px;">所属部门:</label>
+                    <select class="form-control" uudom="dom_502_595_798_376">
+                        <option value="">所有</option>
+                    </select>
+                    <label style="margin-left:100px;">产品分类:</label>
+                    <select class="form-control" uudom="dom_347_845_487_903">
+                        <option value="">所有</option>
+                    </select>
+                    <label style="margin-left:100px;">状态:</label>
+                    <select id="status" class="form-control">
+                        <option value="ALL">所有</option>
+                        <option value="0">失效</option>
+                        <option value="1">有效</option>
+                    </select>
+                </form>
+                <div class="form-inline m_b10 tar">
+                    <button id="label_search" class="btn btn-primary"  type="button" style="width:100px;">搜索</button> 
+                  </div>
+              </div>
+                  <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-primary" style="width:150px;" uudom="dom_183_368_252_853">创建标签</button>
+                    <button type="button" class="btn btn-warning" style="width:150px;" uudom="dom_996_563_427_609">删除标签</button>
+                  </form>
+                </div><!-- /.navbar-collapse -->
+            </nav><!-- /.container-fluid -->
+        
+        <!-- grid -->
+        <table id="table" uudom="dom_111_330_361_661"></table>
+    </div>
+</body>
+</html>
+<!-- uuid:1472800_131468_297084_896631! -->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>标签组合编辑</title>
+    <prefab src="prefab/head.prefab"></prefab>
+    <style>
+     .tdlabel{
+         width: 120px;
+         text-align: right;
+         font-weight: bold;
+     }
+    .tdedit{
+        padding: 2px !important;
+    }
+    </style>
+</head>
+<body>
+    <div class="mywrap" uunode="1473133_043776_709194_995343">
+        <!-- 返回 -->
+        <nav class="navbar navbar-default" role="navigation" style="border:0px;background:none;margin:0px;">
+            <div class="container-fluid" style="padding:0px;">
+                <form class="navbar-form navbar-left" role="search" style="padding:0px;">
+                    <button type="button" class="btn btn-default btn-sm" href="tag-group-manager.html">&lt;返回</button>
+                </form>
+            </div>
+        </nav>
+       <!-- 标签信息 -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">组合标签信息</div>
+            <!--<div class="panel-body">-->
+                <table class="table table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <td class="tdlabel" style="">组合标签ID</td><td style="width:30%" tagCode></td>
+                            <td class="tdlabel">组合标签名称</td><td style="width:30%" tagCodeName></td>
+                        </tr>
+                        <tr>
+                            <td class="tdlabel">所属部门</td><td style="width:30%" dept></td>
+                            <td class="tdlabel">是否产品系列</td><td isprdSeries></td>
+                        </tr>
+                        <tr>
+                            <td class="tdlabel" style="vertical-align: middle;">备注</td>
+                            <td  style="width:45%" class="tdedit"><textarea class="form-control" style="resize:none;"rows="2" remark></textarea></td>
+                            <td class="tdlabel" style="vertical-align: middle;">状态</td>
+                            <td class="tdlabel" style="vertical-align: middle;">
+                                <select class="form-control" style="width:250px" status>
+                                    <option value="0">失效</option>
+                                    <option value="1">有效</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!--</div>-->
+        </div>
+        <!-- grid -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">包含子标签</div>
+            <table uudom="dom_761_852_739_405"></table>
+        </div>
+        
+        <!-- 保存 -->
+        <nav class="navbar navbar-default" role="navigation" style="border:0px;background:none;margin-top:5px;">
+            <div class="container-fluid" style="padding:0px;">
+                <form class="navbar-form navbar-right" role="search">
+                    <button type="button" class="btn btn-default" style="width:130px;" id='addLabel' uudom="dom_887_553_378_453">添加标签</button>
+                    <button type="button" class="btn btn-warning" style="width:130px;" uudom="dom_522_297_258_426">删除标签</button>
+                    <button type="button" class="btn btn-primary" style="width:130px;" uudom="dom_398_305_537_196">保存</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
+<!-- uuid:1473132_016415_578736_398480! -->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head uunode="1476320_646516_132077_798754">
+        <title>产品输出管理</title>
+        <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<body class="ch_basicInfo" >
+        <div class="mywrap" uunode="1476320_692805_568663_794697">
+                <div class="panel panel-primary">
+                        <div class="panel-heading">筛选条件</div>
+                        <ul class="list-group ">
+                                <li class="list-group-item">
+                                        <form class="form-inline m_b10">
+                                                <div class="form-group m_r15" uudom="dom_916_841_252_685">
+                                                        <label class="m_r15 qu-s">产品名称</label>
+                                                        <select class="form-control m_r15 " filter="prdCode" id="bco-sel01" uudom="dom_725_373_465_778" uunode="1476320_817596_392965_276150">
+                                <option value="">全部</option>
+                        </select>
+                                                </div>
+                                                <div class="form-group m_r15" uudom="dom_614_745_127_253">
+                                                        <label class="bco-s tar m_r15 qu-s"> 渠道 </label>
+                                                        <select class="form-control m_r15" filter="channelCode " id="bco-sel02" uudom="dom_939_978_763_432" uunode="1476320_833198_924007_302084">
+                                <option value="">全部</option>                                
+                        </select>
+                        
+                                                </div>
+                                                <button type="button" id="btn" class="btn fr btn-primary" style="width:100px" uudom="dom_255_509_335_895">查询</button>
+                                        </form>
+                                </li>
+                        </ul>
+             </div>
+                <div id="toolbar" style="float:right; margin-bottom:10px;">
+                        <button type="button"  class="btn btn-default"  uudom="dom_398_987_310_704">新增</button>
+                </div>
+
+                <div class="table-responsive" style="clear:both">
+                        <table uudom="dom_463_137_817_911">
+                        </table>
+                </div>
+        </div>
+</body>
+</html>
+<!-- uuid:1475892_216601_505174_792057! -->

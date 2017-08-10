@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>配置组合产品</title>
+    <prefab src="prefab/head.prefab"></prefab>
+</head>
+
+<style>
+    .table-center,.table-center th,.table-center td{
+        text-align: center;
+        vertical-align: middle!important;
+    }
+</style>
+
+<body>
+    <div class="mywrap" uunode="1480053_580297_882306_709564">
+        <prefab src="prefab/pro_nav.prefab"></prefab>
+        <div class="panel panel-primary" style="margin-top:30px">
+            <div class="panel-heading">组合产品</div>
+            <div class="panel-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <select class="form-control" id="combProdType-sel" uudom="dom_552_520_127_799">
+                                <option value="5">全部</option>
+                                <option value="2">已上架</option>
+                                <option value="1">待审核</option>
+                                <option value="3">已下架</option>
+                                <option value="4">拒绝</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-offset-8 col-sm-2">
+                            <a href="product-group-detail.html" class="btn btn-primary btn-block">新增组合</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<table class="table">
+                <caption>
+                    <button class="btn btn-primary fr" style="width:150px">新增组合</button>
+                </caption>
+            </table>-->
+            <!--<table class="table table-center table-bordered table-hover" style="border:1px solid #ddd">
+                <thead>
+                    <tr>
+                        <th>所属部门</th>
+                        <th>组合产品代码</th>
+                        <th>组合名称</th>
+                        <th>组合风险等级</th>
+                        <th>最近修改时间</th>
+                        <th>组合状态</th>
+                        <th width="110">查看组合详情</th>
+                        <th width="180">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>智能投顾</td>
+                        <td>12345</td>
+                        <td>xxxxxxxxxx</td>
+                        <td>中高</td>
+                        <td>2016.11.21</td>
+                        <td>上架</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" style="width:70px">详情</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" style="width:70px">修改</button>
+                            <button class="btn btn-sm btn-primary" style="width:70px">下架</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>-->
+        </div>
+        <div style="width:100%" class="table-responsive fl_r">
+            <table id="configListTable"></table>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- uuid:1479691_182886_194670_617501! -->
